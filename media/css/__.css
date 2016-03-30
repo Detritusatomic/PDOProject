@@ -1,0 +1,211 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 mars 2016, 11:06:02
+    Author     : geoffrey
+*/
+
+body{
+    padding-top:70px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif !important;
+    font-size:17px!important;
+    overflow-x:hidden;
+    background-color:#e8eaf6;
+}
+a:hover{
+    text-decoration:none!important;
+    cursor:pointer;
+}
+
+
+/*****************	Navbar	*****************/
+.navlink{
+    background-color:transparent!important;
+    color:white!important;
+    text-align:center!important;
+    text-decoration:none!important;
+    font-size:20px!important;
+}
+.navlink:hover{
+    cursor:pointer;
+}
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:70px;
+    line-height:70px;
+    width:100%;
+    max-width:100%;
+    border:none;
+    z-index:1030;
+    border-radius:0;
+}
+#hover{
+    position:absolute;
+    height:0;
+    background-color:rgba(255,255,255,.8);
+    transition:.2s;
+}
+#loginform{
+    position:absolute;
+    height:auto;
+    top:-250px;
+    right:0;
+    transition:.2s;
+}
+#loginform.show{
+    top:70px;
+}
+
+/*****************	Footer	*****************/
+footer{
+    position:relative;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*****************	Colors	*****************/
+.bg-blue{
+    background-color:#3f51b5;
+}
+.bg-white{
+    background-color:white;
+}
+/*****************	Paddings	*****************/
+.no-padding{
+    padding:0;
+}
+
+.padding-xs{
+    padding:5px;
+}
+
+.padding-xs-t{
+    padding-top:5px;
+}
+.padding-xs-r{
+    padding-right:5px;
+}
+.padding-xs-b{
+    padding-bottom:5px;
+}
+.padding-xs-l{
+    padding-left:5px;
+}
+
+.padding-xs-tr,.padding-xs-rt{
+    padding-top:5px;
+    padding-right:5px;
+}
+.padding-xs-tb,.padding-xs-bt{
+    padding-top:5px;
+    padding-bottom:5px
+}
+.padding-xs-tl,.padding-xs-lt{
+    padding-top:5px;
+    padding-left:5px;
+}
+
+.padding-xs-rb,.padding-xs-br{
+    padding-right:5px;
+    padding-bottom:5px;
+}
+.padding-xs-rl,.padding-xs-lr{
+    padding-right:5px;
+    padding-left:5px;
+}
+.padding-xs-bl,.padding-xs-lb{
+    padding-bottom:5px;
+    padding-left:5px;
+}
+
+.padding-md{
+    padding:15px;
+}
+
+.padding-md-t{
+    padding-top:15px;
+}
+.padding-md-r{
+    padding-right:15px;
+}
+.padding-md-b{
+    padding-bottom:15px;
+}
+.padding-md-l{
+    padding-left:15px;
+}
+
+.padding-md-tr,.padding-md-rt{
+    padding-top:15px;
+    padding-right:15px;
+}
+.padding-md-tb,.padding-md-bt{
+    padding-top:15px;
+    padding-bottom:15px
+}
+.padding-md-tl,.padding-md-lt{
+    padding-top:15px;
+    padding-left:15px;
+}
+
+.padding-md-rb,.padding-md-br{
+    padding-right:15px;
+    padding-bottom:15px;
+}
+.padding-md-rl,.padding-md-lr{
+    padding-right:15px;
+    padding-left:15px;
+}
+.padding-md-bl,.padding-md-lb{
+    padding-bottom:15px;
+    padding-left:15px;
+}
+
+/*****************	Texts align	*****************/
+.center{
+    text-align:center;
+}
+
+/*****************	Shadows	*****************/
+.shadow1{
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+/*****************	Scrollbar	*****************/
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background:#3f51b5;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background:#7abcce;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #55555A;
+}
+::selection{
+    color: white;  
+    background-color:orange; 
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
