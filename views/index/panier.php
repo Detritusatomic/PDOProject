@@ -26,7 +26,7 @@
 				<div class="col s7 no-padding-lr">
 					<h5>Deadpool</h5>
 					<h6>Version dématèrialisée</h6>
-					<p class="green-text">En stock</p>
+					<p class="green-text">Disponible</p>
 					<a class="grey-text">Retirer du panier</a>
 				</div>
 				<div class="input-field col s2 no-padding-lr">
