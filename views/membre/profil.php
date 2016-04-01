@@ -21,7 +21,7 @@
 		</div>
 	</div>
 </div>
-		<h2 class="center">Mes commandes récentes</h2>
+		<h2 class="center">Mes commandes</h2>
 		<div class="row">
 			<div class="col s12">
 				<?php foreach ($variables['commandes'] as $commande) : ?>
