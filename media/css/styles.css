@@ -106,29 +106,30 @@ footer{
 .label{
 	color:white!important;
 }
-.jaquette{
-	height:300px;
-}
-.jaquette img:not(.active){
+
+.jaquette-s img:not(.active){
 	width:100%;
 	max-height:300px;
 	height:auto;
 }
-.jaquettebig img{
+
+.jaquette-m img:not(.active){
+	width:100%;
+	max-height:350px;
+	height:auto;
+}
+.jaquette-l img{
+	width:100%;
 	max-height:600px;
+	height:auto;
 }
-.jaquette2{
-	height:250px;
-}
+
 .jaquette2 img:not(.active){
 	width:100%;
 	max-height:250px;
 	height:auto;
 }
 
-.jaquette3{
-	height:185px;
-}
 .jaquette3 img:not(.active){
 	width:100%;
 	max-height:185px;
@@ -212,6 +213,10 @@ footer{
 	position:absolute;
 	bottom:10px;
 	right:10px;
+}
+.carousel .carousel-item img{
+	height:280px;
+	margin-top:-40px;
 }
 
 /*****************	Paddings	*****************/
@@ -352,6 +357,9 @@ footer{
 }
 .uppercase{
 	text-transform:uppercase;
+}
+.bold{
+	font-weight:bold;
 }
 
 /*****************	Shadows	*****************/

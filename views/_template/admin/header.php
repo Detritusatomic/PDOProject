@@ -4,16 +4,16 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <!--Import Google Icon Font-->
-        <link href="//localhost/PDOproject/media/css/materialize.min.css" rel="stylesheet"/>
-        <link href="//localhost/PDOproject/media/css/stylesadmin.css" rel="stylesheet"/>
-        <script type="text/javascript" src="//localhost/PDOproject/media/js/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="//localhost/PDOproject/media/js/materialize.min.js"></script>
-        <script type="text/javascript" src="//localhost/PDOproject/media/js/scripts.js"></script>
+        <link href="//127.0.0.1/PDOproject/media/css/materialize.min.css" rel="stylesheet"/>
+        <link href="//127.0.0.1/PDOproject/media/css/stylesadmin.css" rel="stylesheet"/>
+        <script type="text/javascript" src="//127.0.0.1/PDOproject/media/js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="//127.0.0.1/PDOproject/media/js/materialize.min.js"></script>
+        <script type="text/javascript" src="//127.0.0.1/PDOproject/media/js/scripts.js"></script>
 
         <!-- ckeditor -->
-        <script type="text/javascript" src="//localhost/PDOproject/media/js/ckeditor/ckeditor.js"></script>
-        <link href="//localhost/PDOproject/media/js/ckeditor/skins/office2013/editor.css" rel="stylesheet"/>
-        <link href="//localhost/PDOproject/media/js/ckeditor/skins/office2013/dialog.css" rel="stylesheet"/>
+        <script type="text/javascript" src="//127.0.0.1/PDOproject/media/js/ckeditor/ckeditor.js"></script>
+        <link href="//127.0.0.1/PDOproject/media/js/ckeditor/skins/office2013/editor.css" rel="stylesheet"/>
+        <link href="//127.0.0.1/PDOproject/media/js/ckeditor/skins/office2013/dialog.css" rel="stylesheet"/>
     </head>
 
     <header>

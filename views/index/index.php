@@ -1,4 +1,5 @@
 <div class="wrap white shadow1">
+	<!-------------------------------------------PDPDUITS FRAIS------------------------------------------->
     <div class="row">
         <div class="col s12 m12">
             <h4>Les produits frais</h4>
@@ -7,7 +8,7 @@
             <div class="row">
                 <div class="col s12">
                     <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquettebig">
+                        <div class="card-image jaquette-l">
                             <img width="100%" src="<?= $variables['produits'][0]->url_image; ?>">
                         </div>
                         <div class="card-content">
@@ -39,7 +40,7 @@
             <div class="row">
                 <div class="col s6">
                     <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette">
+                        <div class="card-image jaquette-s">
                             <img width="100%" src="<?= $variables['produits'][1]->url_image; ?>">
                         </div>
                         <div class="card-content">
@@ -69,7 +70,7 @@
                 </div>
                 <div class="col s6">
                     <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette">
+                        <div class="card-image jaquette-s">
                             <img width="100%" src="<?= $variables['produits'][2]->url_image; ?>">
                         </div>
                         <div class="card-content">
@@ -103,7 +104,7 @@
             <div class="row">
                 <div class="col s6">
                     <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette">
+                        <div class="card-image jaquette-s">
                             <img width="100%" src="<?= $variables['produits'][3]->url_image; ?>">
                         </div>
                         <div class="card-content">
@@ -133,7 +134,7 @@
                 </div>
                 <div class="col s6">
                     <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette">
+                        <div class="card-image jaquette-s">
                             <img width="100%" src="<?= $variables['produits'][4]->url_image; ?>">
                         </div>
                         <div class="card-content">
@@ -165,7 +166,7 @@
             <div class="row">
                 <div class="col s12">
                     <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquettebig">
+                        <div class="card-image jaquette-l">
                             <img width="100%" src="<?= $variables['produits'][5]->url_image; ?>">
                         </div>
                         <div class="card-content">
@@ -196,13 +197,44 @@
             </div>
         </div>
     </div>
+	
+	<!-------------------------------------------SELECTION------------------------------------------->
+	<div class="row">
+		<div class="col s12">
+			<h4>La séléction</h4>
+		</div>
+		<div class="col s6 margin-l-b">
+			<div class="carousel">
+				<?php for($i=0;$i<10;$i++){echo'
+					<a class="carousel-item preview" href="#img'.$variables['produits'][$i]->id.'" data-nom="'.$variables['produits'][$i]->nom.'" data-description="'.$variables['produits'][$i]->synopsis.'" data-couleur="'.Categories::getNameById($variables['produits'][$i]->id_categorie)['color'].'" data-categorie="'.Categories::getNameById($variables['produits'][$i]->id_categorie)['nom'].'" data-note="'.$variables['produits'][$i]->avis_site.'">
+						<img src="'.$variables['produits'][$i]->url_image.'">
+					</a>';
+				}?>
+			</div>
+		</div>
+		<div class="col s6">
+			<div class="card z-depth-0">
+				<div class="card-content">
+					<h5 id="view-nom" class="bold"></h5>
+					<p id="view-description"></p>
+					<p id="view-categorie"></p>
+					<p>
+						<i id="view-note"></i>
+					</p>
+					<br/>
+					<a class="btn  blue waves waves-effect">En savoir plus</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------------------------------LES GROS SUCCES------------------------------------------->
     <div class="row">
         <div class="col m7 s12">
             <h4>Les gros succès</h4>
             <div class="row">
                 <div class="col s6">
                     <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquettebig">
+                        <div class="card-image jaquette-m">
                             <img width="100%" src="<?= $variables['bestProduits'][1]->url_image; ?>">
                         </div>
                         <div class="card-content">
@@ -232,7 +264,7 @@
                 </div>
                 <div class="col s6">
                     <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquettebig">
+                        <div class="card-image jaquette-m">
                             <img width="100%" src="<?= $variables['bestProduits'][2]->url_image; ?>">
                         </div>
                         <div class="card-content">
@@ -264,7 +296,7 @@
             <div class="row">
                 <div class="col s6">
                     <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquettebig">
+                        <div class="card-image jaquette-m">
                             <img width="100%" src="<?= $variables['bestProduits'][3]->url_image; ?>">
                         </div>
                         <div class="card-content">
@@ -294,7 +326,7 @@
                 </div>
                 <div class="col s6">
                     <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquettebig">
+                        <div class="card-image jaquette-m">
                             <img width="100%" src="<?= $variables['bestProduits'][4]->url_image; ?>">
                         </div>
                         <div class="card-content">
@@ -329,12 +361,15 @@
                 </div>
             </div>
         </div>
-        <div class="col m5 s12">
+		
+		<!-------------------------------------------LES GROS KIFFS------------------------------------------->
+        
+		<div class="col m5 s12">
             <h4>Les gros kiffs</h4>
             <div class="row">
                 <div class="col s12">
                     <div class="card hoverable red darken-1">
-                        <div class="card-image jaquettebig">
+                        <div class="card-image jaquette-l">
                             <img width="100%" src="<?= $variables['bestProduits'][5]->url_image; ?>">
                         </div>
                         <div class="card-content">
@@ -349,7 +384,7 @@
                 </div>
                 <div class="col s12">
                     <div class="card hoverable red darken-1">
-                        <div class="card-image jaquettebig">
+                        <div class="card-image jaquette-l">
                             <img width="100%" src="<?= $variables['bestProduits'][6]->url_image; ?>">
                         </div>
                         <div class="card-content">

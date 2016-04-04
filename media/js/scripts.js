@@ -1,4 +1,5 @@
 $(document).on('ready',function(){
+	$('.carousel').carousel();
 	$(document).on('mouseover','.navlink',function(){
 		var rect=this.getBoundingClientRect();
 		var hover=document.getElementById('hover');
@@ -13,5 +14,4 @@ $(document).on('ready',function(){
 	$(document).on('click','#login',function(){
 		$('#loginform').toggleClass('show');
 	});
-
 });
