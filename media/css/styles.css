@@ -201,11 +201,11 @@ footer{
 }
 .filler{
 	position:relative;
-	height:150px;
+	height:100px;
 }
 .card-profile-image{
 	position:absolute;
-	top:90px;
+	top:45px;
 	height:120px;
 	width:120px;
 }
