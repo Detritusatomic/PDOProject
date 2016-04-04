@@ -18,15 +18,7 @@
                             <p>
                                 <i class="material-icons <?= Categories::getNameById($variables['produits'][0]->id_categorie)['color']; ?>">
                                     <?php
-                                    //gestion des etoiles
-                                    $star = (int) $variables['produits'][0]->avis_site / 2;
-                                    $reste = (int) $variables['produits'][0]->avis_site % 2;
-                                    for ($i = 0 + (int) $reste; $i < $star; $i++) {
-                                        echo 'star ';
-                                    }
-
-                                    if ($reste == '1')
-                                        echo 'star_half';
+										Produits::getStars((int)$variables['produits'][0]->avis_site);
                                     ?>
                                 </i>
                             </p>
@@ -50,15 +42,7 @@
                             <p>
                                 <i class="material-icons <?= Categories::getNameById($variables['produits'][1]->id_categorie)['color']; ?>">
                                     <?php
-                                    //gestion des etoiles
-                                    $star = (int) $variables['produits'][1]->avis_site / 2;
-                                    $reste = (int) $variables['produits'][1]->avis_site % 2;
-                                    for ($i = 0 + (int) $reste; $i < $star; $i++) {
-                                        echo 'star ';
-                                    }
-
-                                    if ($reste == '1')
-                                        echo 'star_half';
+										Produits::getStars((int)$variables['produits'][1]->avis_site);
                                     ?>
                                 </i>
                             </p>
@@ -80,15 +64,7 @@
                             <p>
                                 <i class="material-icons <?= Categories::getNameById($variables['produits'][2]->id_categorie)['color']; ?>">
                                     <?php
-                                    //gestion des etoiles
-                                    $star = (int) $variables['produits'][2]->avis_site / 2;
-                                    $reste = (int) $variables['produits'][2]->avis_site % 2;
-                                    for ($i = 0 + (int) $reste; $i < $star; $i++) {
-                                        echo 'star ';
-                                    }
-
-                                    if ($reste == '1')
-                                        echo 'star_half';
+										Produits::getStars((int)$variables['produits'][2]->avis_site);
                                     ?>
                                 </i>
                             </p>
@@ -114,15 +90,7 @@
                             <p>
                                 <i class="material-icons <?= Categories::getNameById($variables['produits'][3]->id_categorie)['color']; ?>">
                                     <?php
-                                    //gestion des etoiles
-                                    $star = (int) $variables['produits'][3]->avis_site / 2;
-                                    $reste = (int) $variables['produits'][3]->avis_site % 2;
-                                    for ($i = 0 + (int) $reste; $i < $star; $i++) {
-                                        echo 'star ';
-                                    }
-
-                                    if ($reste == '1')
-                                        echo 'star_half';
+										Produits::getStars((int)$variables['produits'][3]->avis_site);
                                     ?>
                                 </i>
                             </p>
@@ -144,15 +112,7 @@
                             <p>
                                 <i class="material-icons <?= Categories::getNameById($variables['produits'][4]->id_categorie)['color']; ?>">
                                     <?php
-                                    //gestion des etoiles
-                                    $star = (int) $variables['produits'][4]->avis_site / 2;
-                                    $reste = (int) $variables['produits'][4]->avis_site % 2;
-                                    for ($i = 0 + (int) $reste; $i < $star; $i++) {
-                                        echo 'star ';
-                                    }
-
-                                    if ($reste == '1')
-                                        echo 'star_half';
+										Produits::getStars((int)$variables['produits'][4]->avis_site);
                                     ?>
                                 </i>
                             </p>
@@ -176,15 +136,7 @@
                             <p>
                                 <i class="material-icons <?= Categories::getNameById($variables['produits'][5]->id_categorie)['color']; ?>">
                                     <?php
-                                    //gestion des etoiles
-                                    $star = (int) $variables['produits'][5]->avis_site / 2;
-                                    $reste = (int) $variables['produits'][5]->avis_site % 2;
-                                    for ($i = 0 + (int) $reste; $i < $star; $i++) {
-                                        echo 'star ';
-                                    }
-
-                                    if ($reste == '1')
-                                        echo 'star_half';
+										Produits::getStars((int)$variables['produits'][5]->avis_site);
                                     ?>
                                 </i>
                             </p>
@@ -244,15 +196,7 @@
                             <p>
                                 <i class="material-icons <?= Categories::getNameById($variables['bestProduits'][1]->id_categorie)['color']; ?>">
                                     <?php
-                                    //gestion des etoiles
-                                    $star = (int) $variables['bestProduits'][1]->avis_site / 2;
-                                    $reste = (int) $variables['bestProduits'][1]->avis_site % 2;
-                                    for ($i = 0 + (int) $reste; $i < $star; $i++) {
-                                        echo 'star ';
-                                    }
-
-                                    if ($reste == '1')
-                                        echo 'star_half';
+										Produits::getStars((int)$variables['bestProduits'][1]->avis_site);
                                     ?>
                                 </i>
                             </p>
@@ -274,15 +218,7 @@
                             <p>
                                 <i class="material-icons <?= Categories::getNameById($variables['bestProduits'][2]->id_categorie)['color']; ?>">
                                     <?php
-                                    //gestion des etoiles
-                                    $star = (int) $variables['bestProduits'][2]->avis_site / 2;
-                                    $reste = (int) $variables['bestProduits'][2]->avis_site % 2;
-                                    for ($i = 0 + (int) $reste; $i < $star; $i++) {
-                                        echo 'star ';
-                                    }
-
-                                    if ($reste == '1')
-                                        echo 'star_half';
+										Produits::getStars((int)$variables['bestProduits'][2]->avis_site);
                                     ?>
                                 </i>
                             </p>
@@ -306,15 +242,7 @@
                             <p>
                                 <i class="material-icons <?= Categories::getNameById($variables['bestProduits'][3]->id_categorie)['color']; ?>">
                                     <?php
-                                    //gestion des etoiles
-                                    $star = (int) $variables['bestProduits'][3]->avis_site / 2;
-                                    $reste = (int) $variables['bestProduits'][3]->avis_site % 2;
-                                    for ($i = 0 + (int) $reste; $i < $star; $i++) {
-                                        echo 'star ';
-                                    }
-
-                                    if ($reste == '1')
-                                        echo 'star_half';
+										Produits::getStars((int)$variables['bestProduits'][3]->avis_site);
                                     ?>
                                 </i>
                             </p>
@@ -336,15 +264,7 @@
                             <p>
                                 <i class="material-icons <?= Categories::getNameById($variables['bestProduits'][4]->id_categorie)['color']; ?>">
                                     <?php
-                                    //gestion des etoiles
-                                    $star = (int) $variables['bestProduits'][4]->avis_site / 2;
-                                    $reste = (int) $variables['bestProduits'][4]->avis_site % 2;
-                                    for ($i = 0 + (int) $reste; $i < $star; $i++) {
-                                        echo 'star ';
-                                    }
-
-                                    if ($reste == '1')
-                                        echo 'star_half';
+										Produits::getStars((int)$variables['bestProduits'][4]->avis_site);
                                     ?>
                                 </i>
                             </p>

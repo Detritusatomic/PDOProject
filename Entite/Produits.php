@@ -130,6 +130,21 @@ class Produits extends Entity {
         $req->execute();
         return true;
     }
+	
+	public static function getStars($note){
+		$string='';
+		$star = $note / 2;
+		$reste = $note % 2;
+		
+		for ($i = 0 + $reste; $i < $star; $i++) {
+			$string.='star ';
+		}
+		
+		if ($reste == 1)
+			$string.='star_half';
+		
+		echo $string;
+	}
 
     /** getters and setter */
     function getId() {
@@ -251,20 +266,5 @@ class Produits extends Entity {
     function setNote($note) {
         $this->note = $note;
     }
-	
-	function getStars($note){
-		$string='';
-		$star = $note / 2;
-		$reste = $note % 2;
-		
-		for ($i = 0 + $reste; $i < $star; $i++) {
-			$string+='star ';
-		}
-		
-		if ($reste == 1)
-			$string+='star_half';
-		
-		return $string;
-	}
 
 }
