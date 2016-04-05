@@ -20,20 +20,18 @@
 					</div> 
 					<div class="col s5">
 						<h4 class="grey-text text-darken-3 no-margin-b">Mes badges</h4>
-						<div class="row">
-							<p class="col s6">Le joueur</p>
-							<p class="col s6"><i class="material-icons blue-text tooltipped" data-position="right" data-tooltip="Acheter un jeu">games</i></p><br/>
-							<p class="col s6">Le riche</p>
-							<p class="col s6"><i class="material-icons blue-text">credit_card</i></p><br/>
-							<p class="col s6">Le vieux</p>
-							<p class="col s6"><i class="material-icons blue-text">album</i></p><br/>
-							<p class="col s6">Le chiant</p>
-							<p class="col s6"><i class="material-icons blue-text">comment</i></p><br/>							
-							<p class="col s6">Le mécontent</p>
-							<p class="col s6"><i class="material-icons blue-text">star</i></p><br/>
-							<p class="col s6">Le chiant 2</p>
-							<p class="col s6"><i class="material-icons blue-text">forum</i></p><br/>
-						</div>
+						
+						<i class="material-icons blue-text tooltipped" data-position="bottom" data-tooltip="Le gamer">games</i>
+						<i class="material-icons blue-text tooltipped" data-position="bottom" data-tooltip="Le riche">credit_card</i>
+						<i class="material-icons blue-text tooltipped" data-position="bottom" data-tooltip="L'ancien">album</i>
+						<i class="material-icons blue-text tooltipped" data-position="bottom" data-tooltip="Le commentateur">comment</i>							
+						<i class="material-icons blue-text tooltipped" data-position="bottom" data-tooltip="Le juge">star</i>
+
+						<h4 class="grey-text text-darken-3 no-margin-b">Mes futurs badges</h4>
+						<i class="material-icons grey-text text-lighten-2 tooltipped" data-position="bottom" data-tooltip="Le troll">forum</i>
+						<i class="material-icons grey-text text-lighten-2 tooltipped" data-position="bottom" data-tooltip="Le cinéaste">movie</i>
+						<i class="material-icons grey-text text-lighten-2 tooltipped" data-position="bottom" data-tooltip="Le tout puissant">visibility</i>
+						
 					</div>
 					<div class="col s12">                  
 						<h4 class="grey-text text-darken-3 no-margin-b">Historique de mes commandes</h4>
