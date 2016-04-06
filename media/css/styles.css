@@ -219,6 +219,25 @@ footer{
 	margin-top:-40px;
 }
 
+footer .input-field label{
+	color:#1565C0;
+}
+footer .input-field input[type=text]{
+	color:#1565C0;
+	border-bottom:1px solid #1565C0;
+}
+footer .input-field input[type=text]:focus{
+	color:white;
+	border-bottom:1px solid white;
+}
+footer .input-field input[type=text]:focus + label{
+	color:white;
+}
+footer .input-field .prefix.active{
+	color:white;
+}
+
+
 /*****************	Paddings	*****************/
 .no-padding{
 	padding:0!important;
@@ -367,6 +386,14 @@ footer{
 	box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
 }
 
+
+/*****************	Hover	*****************/
+.hover-white{
+	transition:.2s;
+}
+.hover-white:hover{
+	color:white!important;
+}
 
 
 /*****************	Scrollbar	*****************/

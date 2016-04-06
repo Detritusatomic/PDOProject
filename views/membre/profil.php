@@ -26,11 +26,14 @@
 						<i class="material-icons blue-text tooltipped" data-position="bottom" data-tooltip="L'ancien">album</i>
 						<i class="material-icons blue-text tooltipped" data-position="bottom" data-tooltip="Le commentateur">comment</i>							
 						<i class="material-icons blue-text tooltipped" data-position="bottom" data-tooltip="Le juge">star</i>
-
-						<h4 class="grey-text text-darken-3 no-margin-b">Mes futurs badges</h4>
+						<br/>
 						<i class="material-icons grey-text text-lighten-2 tooltipped" data-position="bottom" data-tooltip="Le troll">forum</i>
 						<i class="material-icons grey-text text-lighten-2 tooltipped" data-position="bottom" data-tooltip="Le cinéaste">movie</i>
 						<i class="material-icons grey-text text-lighten-2 tooltipped" data-position="bottom" data-tooltip="Le tout puissant">visibility</i>
+						<div class="progress blue lighten-4">
+							<div class="determinate blue" style="width:50%"></div>
+						</div>
+						<p>Progression : 50%</p>
 						
 					</div>
 					<div class="col s12">                  
