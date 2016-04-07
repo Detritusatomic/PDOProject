@@ -153,14 +153,14 @@ class Produits extends Entity {
 		$display='
 		<div class="card white hoverable pointer no-margin-b">
 			<div class="card-image">
-				<img width="100%" src="'.$produit->getUrl_image().'">
+				<img id="particle'.$id.'" width="100%" src="'.$produit->getUrl_image().'">
 			</div>
 			<div class="card-content">
 				<h5><strong>'.$produit->getNom().'</strong></h5>
 				<p>'.$produit->getStars().'</p>
 				<p class="'.$produit->getTextColor().'">'.$produit->getCategorie().'</p>
 				<p><strong>Genres</strong> : '.$produit->getGenre().'</p>
-				<br/><button class="btn z-depth-0 '.$produit->getColor().' waves-effect waves-light addpanier" data-color="'.$produit->getColor().'">je veux !</button>
+				<br/><button class="btn z-depth-0 '.$produit->getColor().' waves-effect waves-light addpanier" data-id="'.$id.'">je veux !</button>
 			</div>
 		</div>';
 		

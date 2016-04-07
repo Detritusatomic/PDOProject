@@ -250,15 +250,17 @@ footer .input-field .prefix.active{
 }
 
 .particle{
-	height:20px;
-	width:20px;
-	border-radius:50%;
 	position:absolute;
 	z-index:10;
 	left:0;
-	top:0;
-	background-color:black;
+	bottom:0;
+	opacity:1;
 }
+.particle img{
+	width:100%;
+	height:auto;
+}
+
 
 
 

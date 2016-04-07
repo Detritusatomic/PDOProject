@@ -86,7 +86,7 @@
 							<?php else: ?>
 								<li id="panier">
 									<!----------Bouton panier--------->
-									<a class="waves-effect waves-light">( <span id="nbproduits" class="badge no-margin no-padding">0</span> )<i class="material-icons right">shopping_cart</i></a>
+									<a class="waves-effect waves-light">( <span id="nbproduits" class="badge no-margin no-padding grey-text text-lighten-1">0</span> )<i class="material-icons right">shopping_cart</i></a>
 								</li>
 								<li id="login"><a class="waves-effect waves-light"><i class="material-icons right">arrow_drop_down</i>Mon Compte</a></li>
 							<?php endif; ?>
