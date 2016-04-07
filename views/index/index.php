@@ -7,144 +7,30 @@
         <div class="col m6 s12">
             <div class="row">
                 <div class="col s12">
-                    <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette-l">
-                            <img width="100%" src="<?= $variables['produits'][0]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['produits'][0]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['produits'][0]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['produits'][0]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['produits'][0]->id_categorie)['nom']; ?></p>
-                            <p>
-                                <i class="material-icons <?= Categories::getNameById($variables['produits'][0]->id_categorie)['color']; ?>">
-                                    <?php
-										Produits::getStars((int)$variables['produits'][0]->avis_site);
-                                    ?>
-                                </i>
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text">En savoir plus</a>
-                        </div>
-                    </div>
+                    <?=Produits::display($variables['produits'][0]->id)?>
                 </div>
             </div>
             <div class="row">
                 <div class="col s6">
-                    <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette-s">
-                            <img width="100%" src="<?= $variables['produits'][1]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['produits'][1]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['produits'][1]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['produits'][1]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['produits'][1]->id_categorie)['nom']; ?></p>
-                            <p>
-                                <i class="material-icons <?= Categories::getNameById($variables['produits'][1]->id_categorie)['color']; ?>">
-                                    <?php
-										Produits::getStars((int)$variables['produits'][1]->avis_site);
-                                    ?>
-                                </i>
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text">En savoir plus</a>
-                        </div>
-                    </div>
+                     <?=Produits::display($variables['produits'][1]->id)?>
                 </div>
                 <div class="col s6">
-                    <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette-s">
-                            <img width="100%" src="<?= $variables['produits'][2]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['produits'][2]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['produits'][2]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['produits'][2]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['produits'][2]->id_categorie)['nom']; ?></p>
-                            <p>
-                                <i class="material-icons <?= Categories::getNameById($variables['produits'][2]->id_categorie)['color']; ?>">
-                                    <?php
-										Produits::getStars((int)$variables['produits'][2]->avis_site);
-                                    ?>
-                                </i>
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text">En savoir plus</a>
-                        </div>
-                    </div>
+                     <?=Produits::display($variables['produits'][2]->id)?>
                 </div>
             </div>
         </div>
         <div class="col m6 s12">
             <div class="row">
                 <div class="col s6">
-                    <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette-s">
-                            <img width="100%" src="<?= $variables['produits'][3]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['produits'][3]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['produits'][3]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['produits'][3]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['produits'][3]->id_categorie)['nom']; ?></p>
-                            <p>
-                                <i class="material-icons <?= Categories::getNameById($variables['produits'][3]->id_categorie)['color']; ?>">
-                                    <?php
-										Produits::getStars((int)$variables['produits'][3]->avis_site);
-                                    ?>
-                                </i>
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text">En savoir plus</a>
-                        </div>
-                    </div>
+                     <?=Produits::display($variables['produits'][3]->id)?>
                 </div>
                 <div class="col s6">
-                    <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette-s">
-                            <img width="100%" src="<?= $variables['produits'][4]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['produits'][4]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['produits'][4]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['produits'][4]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['produits'][4]->id_categorie)['nom']; ?></p>
-                            <p>
-                                <i class="material-icons <?= Categories::getNameById($variables['produits'][4]->id_categorie)['color']; ?>">
-                                    <?php
-										Produits::getStars((int)$variables['produits'][4]->avis_site);
-                                    ?>
-                                </i>
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text">En savoir plus</a>
-                        </div>
-                    </div>
+                     <?=Produits::display($variables['produits'][4]->id)?>
                 </div>
             </div>
             <div class="row">
                 <div class="col s12">
-                    <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette-l">
-                            <img width="100%" src="<?= $variables['produits'][5]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['produits'][5]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['produits'][5]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['produits'][5]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['produits'][5]->id_categorie)['nom']; ?></p>
-                            <p>
-                                <i class="material-icons <?= Categories::getNameById($variables['produits'][5]->id_categorie)['color']; ?>">
-                                    <?php
-										Produits::getStars((int)$variables['produits'][5]->avis_site);
-                                    ?>
-                                </i>
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text">En savoir plus</a>
-                        </div>
-                    </div>
+                     <?=Produits::display($variables['produits'][5]->id)?>
                 </div>
             </div>
         </div>
@@ -185,94 +71,18 @@
             <h4>Les gros succès</h4>
             <div class="row">
                 <div class="col s6">
-                    <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette-m">
-                            <img width="100%" src="<?= $variables['bestProduits'][1]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['bestProduits'][1]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['bestProduits'][1]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['bestProduits'][1]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['bestProduits'][1]->id_categorie)['nom']; ?></p>
-                            <p>
-                                <i class="material-icons <?= Categories::getNameById($variables['bestProduits'][1]->id_categorie)['color']; ?>">
-                                    <?php
-										Produits::getStars((int)$variables['bestProduits'][1]->avis_site);
-                                    ?>
-                                </i>
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text">En savoir plus</a>
-                        </div>
-                    </div>
+                    <?=Produits::display($variables['bestProduits'][1]->id)?>
                 </div>
                 <div class="col s6">
-                    <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette-m">
-                            <img width="100%" src="<?= $variables['bestProduits'][2]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['bestProduits'][2]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['bestProduits'][2]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['bestProduits'][2]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['bestProduits'][2]->id_categorie)['nom']; ?></p>
-                            <p>
-                                <i class="material-icons <?= Categories::getNameById($variables['bestProduits'][2]->id_categorie)['color']; ?>">
-                                    <?php
-										Produits::getStars((int)$variables['bestProduits'][2]->avis_site);
-                                    ?>
-                                </i>
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text">En savoir plus</a>
-                        </div>
-                    </div>
+                    <?=Produits::display($variables['bestProduits'][2]->id)?>
                 </div>
             </div>
             <div class="row">
                 <div class="col s6">
-                    <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette-m">
-                            <img width="100%" src="<?= $variables['bestProduits'][3]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['bestProduits'][3]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['bestProduits'][3]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['bestProduits'][3]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['bestProduits'][3]->id_categorie)['nom']; ?></p>
-                            <p>
-                                <i class="material-icons <?= Categories::getNameById($variables['bestProduits'][3]->id_categorie)['color']; ?>">
-                                    <?php
-										Produits::getStars((int)$variables['bestProduits'][3]->avis_site);
-                                    ?>
-                                </i>
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text">En savoir plus</a>
-                        </div>
-                    </div>
+                    <?=Produits::display($variables['bestProduits'][3]->id)?>
                 </div>
                 <div class="col s6">
-                    <div class="card white hoverable pointer no-margin-b">
-                        <div class="card-image jaquette-m">
-                            <img width="100%" src="<?= $variables['bestProduits'][4]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['bestProduits'][4]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['bestProduits'][4]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['bestProduits'][4]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['bestProduits'][4]->id_categorie)['nom']; ?></p>
-                            <p>
-                                <i class="material-icons <?= Categories::getNameById($variables['bestProduits'][4]->id_categorie)['color']; ?>">
-                                    <?php
-										Produits::getStars((int)$variables['bestProduits'][4]->avis_site);
-                                    ?>
-                                </i>
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text">En savoir plus</a>
-                        </div>
-                    </div>
+                    <?=Produits::display($variables['bestProduits'][4]->id)?>
                 </div>
             </div>
             <div class="row">

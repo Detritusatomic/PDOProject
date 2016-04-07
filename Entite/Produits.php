@@ -131,10 +131,10 @@ class Produits extends Entity {
         return true;
     }
 	
-	public static function getStars($note){
-		$string='';
-		$star = $note / 2;
-		$reste = $note % 2;
+	public function getStars(){
+		$string='<i class="material-icons '.$this->getTextColor().'">';
+		$star = $this->avis_site / 2;
+		$reste = $this->avis_site % 2;
 		
 		for ($i = 0 + $reste; $i < $star; $i++) {
 			$string.='star ';
@@ -143,9 +143,30 @@ class Produits extends Entity {
 		if ($reste == 1)
 			$string.='star_half';
 		
-		echo $string;
+		$string.='</i>';
+		
+		return $string;
 	}
-
+	
+	public static function display($id){
+		$produit=Produits::getProductById($id);
+		$display='
+		<div class="card white hoverable pointer no-margin-b">
+			<div class="card-image">
+				<img width="100%" src="'.$produit->getUrl_image().'">
+			</div>
+			<div class="card-content">
+				<h5><strong>'.$produit->getNom().'</strong></h5>
+				<p>'.$produit->getStars().'</p>
+				<p class="'.$produit->getTextColor().'">'.$produit->getCategorie().'</p>
+				<p><strong>Genres</strong> : '.$produit->getGenre().'</p>
+				<br/><button class="btn z-depth-0 '.$produit->getColor().' waves-effect waves-light addpanier" data-color="'.$produit->getColor().'">je veux !</button>
+			</div>
+		</div>';
+		
+		echo $display;
+	}
+	
     /** getters and setter */
     function getId() {
         return $this->id;
@@ -170,7 +191,7 @@ class Produits extends Entity {
     function getVersion() {
         return $this->version;
     }
-
+	
     function getId_categorie() {
         return $this->id_categorie;
     }
@@ -267,4 +288,15 @@ class Produits extends Entity {
         $this->note = $note;
     }
 
+	function getCategorie(){
+		return Categories::getNameById($this->id_categorie)['nom'];
+	}
+	
+	function getColor(){
+		return str_replace('-text','',Categories::getNameById($this->id_categorie)['color']);
+	}
+	
+	function getTextColor(){
+		return Categories::getNameById($this->id_categorie)['color'];
+	}
 }

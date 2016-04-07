@@ -8,7 +8,7 @@
 				<div class="col s6">
 					<div class="jaquette4">
 						<div class="center ruban orange white-text">Stylé</div>
-						<img class="materialboxed valign" data-caption="Deadpool" width="100%" src="media/img/jaquette1.jpg">
+						<img class="materialboxed valign" data-caption="Deadpool" width="100%" src="<?= $variables['bestProduits'][2]->url_image; ?>">
 					</div>
 				</div>
 				<div class="col s6">
