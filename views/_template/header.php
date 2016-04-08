@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>H1RM1</title>
@@ -81,7 +82,7 @@
 			</div>
 		</div>
 		
-        <nav class="navbar shadow1 grey darken-4">
+        <nav class="navbar shadow1 brown darken-4">
             <div class="nav-wrapper">
                 <div class="wrap">
 					<div class="row">

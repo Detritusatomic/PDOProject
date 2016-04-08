@@ -106,29 +106,37 @@ class Produits extends Entity {
 		$token=str_shuffle($token);
 		$token=substr($token,rand(0,3),rand(4,6));
 		
-		
 		//gestion des params
-		$param=='kiff'?$kiff='<p><strong>Notre avis</strong> : '.$produit->getNote().'</p>':$kiff='';
+		if($param=='kiff'){
+			$kiff='<p><strong>Notre avis</strong> : '.$produit->getNote().'</p>';
+			$cardcolor='brown darken-4';
+			$textcolor='white-text';
+		}else{
+			$kiff='';
+			$cardcolor='white';
+			$textcolor='';
+		}
 		
 		//notre fat string qui affiche notre produit
 		$display='
-		<div class="card white hoverable pointer no-margin-b">
+		<div class="card '.$cardcolor.' hoverable pointer no-margin-b">
 			<div class="card-image">
 				<img id="particle'.$id.$token.'" width="100%" src="'.$produit->getUrl_image().'">
 			</div>
-			<div class="card-content">
+			<div class="card-content '.$textcolor.'">
 				<h5><strong>'.$produit->getNom().'</strong></h5>
 				<p>'.$produit->getStars().'</p>
 				<p class="'.$produit->getTextColor().'">'.$produit->getCategorie().'</p>
 				<p><strong>Genres</strong> : '.$produit->getGenre().'</p>';
-				$display.=$kiff;
-				$display.='
+		$display.=$kiff;
+		$display.='
 				<br/>
 				<button class="btn z-depth-0 '.$produit->getColor().' waves-effect waves-light ';
-				Session::isStarted()?$display.='addpanier':'';$display.='" data-id="'.$id.$token.'">je veux !</button>
+		Session::isStarted()?$display.='addpanier':'';
+		$display.='" data-id="'.$id.$token.'">je veux !</button>
 			</div>
 		</div>';
-		echo $display;
+		return $display;
 	}
 	
     /** public functions */
