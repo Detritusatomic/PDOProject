@@ -28,23 +28,23 @@
                     </ul>
                 </ul>
                 <ul id="slide-out" class="side-nav fixed">
-                    <li><a href='<?php echo __BASE__URI__; ?>admin/index'><i class="material-icons left">home</i>Tableau de bord</a></li>
+                    <li class="no-padding"><a href='<?php echo __BASE__URI__; ?>admin/index'><i class="material-icons left">home</i>Tableau de bord</a></li>
                     <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
                             <li>
-                                <a class="collapsible-header">Produits<i class="material-icons left">shopping_cart</i></a>
+                                <a class="collapsible-header no-margin">Produits<i class="material-icons left">shopping_cart</i></a>
                                 <div class="collapsible-body">
                                     <ul>
-                                        <li><a href='<?php echo __BASE__URI__; ?>adminProduct/index'><i class="material-icons left">keyboard_arrow_right</i>Tous les produits</a></li>
-                                        <li><a href='<?php echo __BASE__URI__; ?>adminProduct/create'><i class="material-icons left">keyboard_arrow_right</i>Créer un produit</a></li>
-                                        <li><a href='<?php echo __BASE__URI__; ?>adminProduct/settings'><i class="material-icons left">keyboard_arrow_right</i>Paramètres</a></li>                                    
+                                        <li class="padding-md-l"><a class="no-margin" href='<?php echo __BASE__URI__; ?>adminProduct/index'><i class="material-icons left">keyboard_arrow_right</i>Tous les produits</a></li>
+                                        <li class="padding-md-l"><a class="no-margin" href='<?php echo __BASE__URI__; ?>adminProduct/create'><i class="material-icons left">keyboard_arrow_right</i>Créer un produit</a></li>
+                                        <li class="padding-md-l"><a class="no-margin" href='<?php echo __BASE__URI__; ?>adminProduct/settings'><i class="material-icons left">keyboard_arrow_right</i>Paramètres</a></li>                                    
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </li>
-                    <li><a href='#'><i class="material-icons left">create</i>Articles</a></li>
-                    <li><a href='#'><i class="material-icons left">grid_on</i>Catégories</a></li>
+                    <li class="no-padding"><a href='#'><i class="material-icons left">create</i>Articles</a></li>
+                    <li class="no-padding"><a href='#'><i class="material-icons left">grid_on</i>Catégories</a></li>
 
                 </ul>
                 <a href="#" data-activates="slide-out" class="button-collapse show-on-large"></a>

@@ -29,3 +29,12 @@ and open the template in the editor.
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
 }
+.no-padding{
+	padding:0!important;
+}
+.padding-md-l{
+	padding-left:15px!important;
+}
+.no-margin{
+	margin:0!important;
+}

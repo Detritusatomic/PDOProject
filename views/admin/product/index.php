@@ -8,12 +8,12 @@
     <div class="col s12">
         <table>
             <thead>
-            <th>ID</th>
-            <th>Image</th>
-            <th>Nom</th>
-            <th>Synopsis</th>
-            <th>Prix</th>
-            <th>Actions</th>
+				<th>ID</th>
+				<th>Image</th>
+				<th>Nom</th>
+				<th>Synopsis</th>
+				<th>Prix</th>
+				<th>Actions</th>
             </thead>
             <tbody>
                 <?php foreach ($variables['produits'] as $produit) : ?>

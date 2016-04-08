@@ -23,13 +23,13 @@
 			<input type="hidden" name="form_login" value="1000"/> 
 			<div class="row">
 				<div class="input-field col s12">
-					<input autocomplete="off" id="mail" type="email" class="validate" name="mail">
+					<input id="mail" type="email" class="validate" name="mail">
 					<label for="mail">Adresse mail</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
-					<input autocomplete="off" id="password" type="password" class="validate" name="password">
+					<input id="password" type="password" class="validate" name="password">
 					<label for="password">Mot de passe</label>
 				</div>
 			</div>

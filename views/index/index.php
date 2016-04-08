@@ -65,8 +65,8 @@
 			</div>
 		</div>
 	</div>
-	<!-------------------------------------------LES GROS SUCCES------------------------------------------->
     <div class="row">
+	<!-------------------------------------------LES GROS SUCCES------------------------------------------->
         <div class="col m7 s12">
             <h4>Les gros succès</h4>
             <div class="row">
@@ -98,34 +98,12 @@
             <h4>Les gros kiffs</h4>
             <div class="row">
                 <div class="col s12">
-                    <div class="card hoverable red darken-1">
-                        <div class="card-image jaquette-l">
-                            <img width="100%" src="<?= $variables['bestProduits'][5]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['bestProduits'][5]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['bestProduits'][5]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['bestProduits'][5]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['bestProduits'][5]->id_categorie)['nom']; ?></p>
-                        </div>
-                        <div class="card-action">
-                            <a class="white-text" href="#">ça a l'air cool</a>
-                        </div>
-                    </div>
+                    <?=Produits::display((int)$variables['kiffs'][0]['value'],'kiff')?>
                 </div>
+			</div>
+            <div class="row">
                 <div class="col s12">
-                    <div class="card hoverable red darken-1">
-                        <div class="card-image jaquette-l">
-                            <img width="100%" src="<?= $variables['bestProduits'][6]->url_image; ?>">
-                        </div>
-                        <div class="card-content">
-                            <h5><strong><?= $variables['bestProduits'][6]->nom; ?></strong></h5>
-                            <p><strong>Description : </strong><?= strip_tags(substr($variables['bestProduits'][6]->synopsis, 0, 50)) . '...'; ?></p>
-                            <p class="<?= Categories::getNameById($variables['bestProduits'][6]->id_categorie)['color']; ?>"><?= Categories::getNameById($variables['bestProduits'][6]->id_categorie)['nom']; ?></p>
-                        </div>
-                        <div class="card-action">
-                            <a class="white-text" href="#">ça me tente</a>
-                        </div>
-                    </div>
+                    <?=Produits::display((int)$variables['kiffs'][1]['value'],'kiff')?>
                 </div>
             </div>
         </div>

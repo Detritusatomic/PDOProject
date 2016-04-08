@@ -70,7 +70,7 @@ class Produits extends Entity {
      * Method : récupere les meilleurs produits
      */
     public static function getSuccess() {
-        $sql = "SELECT * FROM produits WHERE avis_site = '9' OR avis_site = '10' ORDER BY avis_site DESC";
+        $sql = "SELECT * FROM produits WHERE avis_site>8 ORDER BY avis_site DESC,nom";
         $database = Database::getInstance();
         $req = $database->prepare($sql);
         $req->execute();
@@ -88,7 +88,49 @@ class Produits extends Entity {
         $req->execute();
         return $req->rowCount();
     }
+	
+	public static function getKiffs(){
+		$sql = "SELECT value FROM config WHERE config.key ='_MISE_EN_AVANT_1_' OR config.key ='_MISE_EN_AVANT_2_'";
+        $database = Database::getInstance();
+        $req = $database->prepare($sql);
+        $req->execute();
+	    return $array = $req->fetchAll(PDO::FETCH_ASSOC);
+	}
 
+	public static function display($id,$param=null){
+		//recup notre produit
+		$produit=Produits::getProductById($id);
+		
+		//génération token pour id unique
+		$token='azertyuiopqsdfghjklmwcvbn123456789';
+		$token=str_shuffle($token);
+		$token=substr($token,rand(0,3),rand(4,6));
+		
+		
+		//gestion des params
+		$param=='kiff'?$kiff='<p><strong>Notre avis</strong> : '.$produit->getNote().'</p>':$kiff='';
+		
+		//notre fat string qui affiche notre produit
+		$display='
+		<div class="card white hoverable pointer no-margin-b">
+			<div class="card-image">
+				<img id="particle'.$id.$token.'" width="100%" src="'.$produit->getUrl_image().'">
+			</div>
+			<div class="card-content">
+				<h5><strong>'.$produit->getNom().'</strong></h5>
+				<p>'.$produit->getStars().'</p>
+				<p class="'.$produit->getTextColor().'">'.$produit->getCategorie().'</p>
+				<p><strong>Genres</strong> : '.$produit->getGenre().'</p>';
+				$display.=$kiff;
+				$display.='
+				<br/>
+				<button class="btn z-depth-0 '.$produit->getColor().' waves-effect waves-light ';
+				Session::isStarted()?$display.='addpanier':'';$display.='" data-id="'.$id.$token.'">je veux !</button>
+			</div>
+		</div>';
+		echo $display;
+	}
+	
     /** public functions */
 
     /**
@@ -146,25 +188,6 @@ class Produits extends Entity {
 		$string.='</i>';
 		
 		return $string;
-	}
-	
-	public static function display($id){
-		$produit=Produits::getProductById($id);
-		$display='
-		<div class="card white hoverable pointer no-margin-b">
-			<div class="card-image">
-				<img id="particle'.$id.'" width="100%" src="'.$produit->getUrl_image().'">
-			</div>
-			<div class="card-content">
-				<h5><strong>'.$produit->getNom().'</strong></h5>
-				<p>'.$produit->getStars().'</p>
-				<p class="'.$produit->getTextColor().'">'.$produit->getCategorie().'</p>
-				<p><strong>Genres</strong> : '.$produit->getGenre().'</p>
-				<br/><button class="btn z-depth-0 '.$produit->getColor().' waves-effect waves-light addpanier" data-id="'.$id.'">je veux !</button>
-			</div>
-		</div>';
-		
-		echo $display;
 	}
 	
     /** getters and setter */
