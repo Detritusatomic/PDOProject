@@ -55,12 +55,12 @@
 				<div class="card-content">
 					<h5 id="view-nom" class="bold"></h5>
 					<p id="view-description"></p>
-					<p id="view-categorie"></p>
 					<p>
 						<i id="view-note"></i>
 					</p>
+					<p id="view-categorie"></p>
 					<br/>
-					<a class="btn  blue waves waves-effect">En savoir plus</a>
+					<a id="view-btn">ça me tente</a>
 				</div>
 			</div>
 		</div>

@@ -53,8 +53,8 @@ $(document).on('ready',function(){
 		
 		//on récup notre position de panier
 		var panier=document.getElementById('panier');
-		var px=panier.getBoundingClientRect().left+panier.offsetWidth/2-particle.offsetWidth/5;
-		var py=panier.getBoundingClientRect().top+document.body.scrollTop+panier.offsetHeight/2-particle.offsetHeight/5;
+		var px=panier.getBoundingClientRect().left+panier.offsetWidth-particle.offsetWidth/5;
+		var py=panier.getBoundingClientRect().top+document.body.scrollTop+panier.offsetHeight-particle.offsetHeight/5;
 		
 		//grossissement/retrecssement de l'image
 		$(img).animate({
@@ -67,8 +67,8 @@ $(document).on('ready',function(){
 			opacity:".7"
 		},100)
 		.animate({
-			width:$(img).width()/5+"px",
-			height:$(img).height()/5+"px"
+			width:$(img).width()/10+"px",
+			height:$(img).height()/10+"px"
 		},100);
 		
 		//et on anime notre div vers notre panier

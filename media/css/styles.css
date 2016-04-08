@@ -95,7 +95,7 @@ a:hover{
 	position:fixed;
 	height:auto;
 	z-index:2;
-	right:-300px;
+	right:-350px;
 	top:70px;
 	transition:.2s;
 }
@@ -251,7 +251,7 @@ footer .input-field .prefix.active{
 
 .particle{
 	position:absolute;
-	z-index:10;
+	z-index:5;
 	left:0;
 	bottom:0;
 	opacity:1;
@@ -388,9 +388,19 @@ footer .input-field .prefix.active{
 	margin-top:0!important;
 	margin-bottom:0!important;
 }
+.margin-sm-l{
+	margin-left:10px!important;
+	
+}
+.margin-sm-r{
+	margin-right:10px!important;
+}
 
 .margin-l-b{
 	margin-bottom:20px;
+}
+.margin-l-r{
+	margin-right:20px;
 }
 
 /*****************	Texts classes	*****************/
