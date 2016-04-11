@@ -14,6 +14,6 @@ class IndexController extends Controller{
         $params['produits'] = $produits;
         $params['bestProduits'] = $best_products;
         $params['kiffs'] = $kiffs;
-        $this->moteur_vue->loadVue('index/index.php', $params);
+        $this->moteur_vue->loadVue('index/articles.php', $params);
     }
 }

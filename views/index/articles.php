@@ -1,40 +1,42 @@
 <div class="wrap white z-depth-1">
 	<div class="row">
-		<div class="col s12">
+		<div class="col s8">
 			<h4>Les articles frais</h4>
 		</div>		
+		<div class="col s4">
+			<h4>Les articles cools</h4>
+		</div>
 		<div class="col l8 s12">
 			<div class="row">
 				<div class="col l6 m6 s12">
 					<div class="article-container card hoverable jaquette4 pointer no-margin-b">				
-						<img data-caption="Deadpool" width="100%" src="media/img/jaquette2.jpg">
-						<div class="article-caption white padding-md-lr padding-xs-tb">
-							<p class="truncate">
-								10/12/2018<br/>
-								<strong>Borderlands 2</strong> - Le jeu qui possède des armes à l'infini<br/>
-								<span class="orange-text">Jeux</span><br/>
-								<i class="material-icons">star star star star star</i>
-								<span class="right">87 <i class="material-icons">comment</i></span>										
-								<div class="chip">
-									<img src="media/img/avatar.png" alt="Contact Person">
-									Geoffrey HERMIN
-								</div>
-							</p>
+						<img data-caption="Deadpool" width="100%" src="../../media/img/jaquette2.jpg">
+						<div class="article-caption card-content white">
+							<p>10/12/2018</p>
+							<p><strong>Borderlands 2</strong> - Le jeu qui possède des armes à l'infini</p><br/>
+							<span class="right">87 <i class="material-icons">comment</i></span>										
+							<p><i class="material-icons orange-text">star star star star star</i></p>
+							<p class="orange-text">Jeux</p>
+							<br/>
+							<div class="chip">
+								<img src="../../media/img/avatar.png" alt="Contact Person">
+								Geoffrey HERMIN
+							</div>						
 						</div>
 					</div>
 				</div>
 				<div class="col l6 m6 s12">
 					<div class="article-container card hoverable jaquette4 pointer no-margin-b">				
-						<img data-caption="Deadpool" width="100%" src="media/img/jaquette1.jpg">
+						<img data-caption="Deadpool" width="100%" src="../../media/img/jaquette1.jpg">
 						<div class="article-caption white padding-md-lr padding-xs-tb">
-							<p class="truncate">
+							<p>
 								10/12/2018<br/>
 								<strong>Deadpool</strong> - Le film qui déboite un peu trop<br/>
-								<span class="blue-text">Films</span><br/>
-								<i class="material-icons">star star star star</i>
+								<i class="material-icons blue-text">star star star star</i><br/>
+								<span class="blue-text">Films</span>
 								<span class="right">28 <i class="material-icons">comment</i></span>
 								<div class="chip">
-									<img src="media/img/avatar.png" alt="Contact Person">
+									<img src="../../media/img/avatar.png" alt="Contact Person">
 									Geoffrey HERMIN
 								</div>										
 							</p>
@@ -43,7 +45,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col m4 s12">
+				<div class="col m6 s12">
 					<div class="card hoverable pointer white no-margin-b">
 						<div class="card-content truncate">
 							20/12/2048<br/>
@@ -52,7 +54,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col m4 s12">
+				<div class="col m6 s12">
 					<div class="card hoverable pointer white no-margin-b">
 						<div class="card-content truncate">
 							20/12/2048<br/>
@@ -61,12 +63,32 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="row">
 				<div class="col m4 s12">
-					<div class="card hoverable pointer white no-margin-b">
+					<div class="card z-depth-0 hoverable pointer white no-margin-b">
 						<div class="card-content truncate">
 							20/12/2048<br/>
 							<strong class="uppercase">Titeuf</strong> - Il serait sorti de la titepoule.<br/>
 							<span class="purple-text">BD</span><br/> 
+						</div>
+					</div>
+				</div>
+				<div class="col m4 s12">
+					<div class="card z-depth-0 hoverable pointer white no-margin-b">
+						<div class="card-content truncate">
+							20/12/2048<br/>
+							<strong class="uppercase">Titeuf</strong> - Il serait sorti de la titepoule.<br/>
+							<span class="purple-text">BD</span><br/> 
+						</div>
+					</div>
+				</div>
+				<div class="col m4 s12">
+					<div class="card z-depth-0 hoverable pointer white no-margin-b">
+						<div class="card-content truncate">
+							20/12/2048<br/>
+							<strong class="uppercase">50 nuances de black</strong> - Une version africaine plus érrotique du blockbuster.<br/>
+							<span class="blue-text">Films</span><br/> 
 						</div>
 					</div>
 				</div>
@@ -76,7 +98,7 @@
 			<div class="row">
 				<div class="col s12">
 					<div class="card hoverable pointer white no-margin-b">
-						<div class="card-content truncate">
+						<div class="card-content">
 							20/12/2048<br/>
 							<strong class="uppercase">Titeuf</strong> - Il serait sorti de la titepoule.<br/>
 							<span class="purple-text">BD</span><br/> 
@@ -87,7 +109,7 @@
 			<div class="row">
 				<div class="col s12">
 					<div class="card hoverable pointer white no-margin-b">
-						<div class="card-content truncate">
+						<div class="card-content">
 							20/12/2048<br/>
 							<strong class="uppercase">Mozart</strong> - Un homme, né et mort sur un piano.<br/>
 							<span class="red-text">Musique</span><br/> 
@@ -98,7 +120,7 @@
 			<div class="row">
 				<div class="col s12">
 					<div class="card hoverable pointer white no-margin-b">
-						<div class="card-content truncate">
+						<div class="card-content">
 							20/12/2048<br/>
 							<strong class="uppercase">One Piece</strong> - L'humanité sera surment éteinte avant la fin.<br/>
 							<span class="green-text">Série</span><br/> 
@@ -109,7 +131,7 @@
 			<div class="row">
 				<div class="col s12">
 					<div class="card hoverable pointer white no-margin-b">
-						<div class="card-content truncate">
+						<div class="card-content">
 							20/12/2048<br/>
 							<strong class="uppercase">Les lapins crétins Tome 3</strong> - Une bonne grosse carotte pour les lecteurs.<br/>
 							<span class="purple-text">BD</span><br/> 
@@ -117,12 +139,6 @@
 					</div>
 				</div>
 			</div>
-			<p class="center"><a href="#all" class="grey-text" onclick="$('html, body').animate({scrollTop: $('#all').offset().top }, 'slow');return false;">Voir tous les articles</a></p>
-		</div>	
-	</div>
-	<div class="row">
-		<div class="col s12">
-			<h4>Les articles cools</h4>	
 		</div>	
 	</div>
 	<div id="all" class="row">
