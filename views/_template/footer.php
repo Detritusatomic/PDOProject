@@ -14,7 +14,7 @@
             <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Le GPS</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">Accueil</a></li>
+                    <li><a class="grey-text text-lighten-3" href="<?= __BASE__URI__; ?>index/index">Accueil</a></li>
                     <li><a class="grey-text text-lighten-3" href="#!">Séries</a></li>
                     <li><a class="grey-text text-lighten-3" href="#!">Films</a></li>
                     <li><a class="grey-text text-lighten-3" href="#!">Jeux</a></li>

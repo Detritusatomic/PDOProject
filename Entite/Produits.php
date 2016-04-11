@@ -150,13 +150,13 @@ class Produits extends Entity {
 		$token=substr($token,rand(0,3),rand(4,6));
 		
 		$display='
-		<div class="col s6">
+		<div class="col s5">
 			<div class="jaquettebig relative">
 				<div class="center ruban '.$produit->getColor().' uppercase white-text">'.$produit->getBandeau().'</div>
 				<img id="particle'.$produit->getId().$token.'" class="materialboxed valign" data-caption="'.$produit->getNom().'" width="100%" src="'.$produit->getUrl_image().'">
 			</div>
 		</div>
-		<div class="col s6">
+		<div class="col s7">
 			<h5><strong>'.$produit->getNom().'</strong></h5>
 			<ul class="no-padding">
 				<li>'.$produit->getStars().'</li>
@@ -164,25 +164,24 @@ class Produits extends Entity {
 				<li><strong>Notre avis : </strong>'.$produit->getNote().'</li>
 				<li><strong>Genres : </strong>'.$produit->getGenre().'</li>
 				<li><strong>Synopsis : </strong> '.$produit->getSynopsis().'</li>
-				<li><strong>Editeurs : </strong> '.$produit->getActeurs().'</li>
+				<li><strong>Editeurs/Acteurs : </strong> '.$produit->getActeurs().'</li>
 			</ul>
 
 			<div class="divider"></div>
 			
 			<div class="switch">
 				<label>
-					<h6 class="waves-effect btn-flat">Version boîte*</h6>
-					<input type="checkbox" id="checkbox_version">
+					<h6 class="btnversion '.$produit->getTextColor().' waves-effect btn-flat">Version physique*</h6>
+					<input type="checkbox" id="checkbox_version" data-textcolor="'.$produit->getTextColor().'">
 					<span class="lever '.$produit->getColor().'"></span>
-					<h6 class="waves-effect btn-flat">Version numérique</h6>
+					<h6 class="btnversion waves-effect btn-flat">Version numérique</h6>
 				</label>
 			</div>
 			
 			<h5 id="prix" class="'.$produit->getTextColor().'">Prix : 25€</h5>
 			<br/>
 			<a class="addpanier btn waves-effect waves-light '.$produit->getColor().'" data-id="'.$produit->getId().$token.'" data-textcolor="'.$produit->getTextColor().'">Je veux !</a>
-			<div class="filler"></div>
-			<h6><small>*Le prix de la version boîte peut varier selon le mode de livraison</small></h6>
+			<h6><small>*Le prix de la version physique peut varier selon le mode de livraison</small></h6>
 		</div>
 		';
 		

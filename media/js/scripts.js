@@ -172,13 +172,11 @@ $(document).on('ready',function(){
 	
 	//////////////////////////////////////CHOIX VERSION PRODUIT/////////////////////////////////
 	$(document).on('click','#checkbox_version',function(){
-	
+		$('.btnversion').toggleClass($(this).attr('data-textcolor'));
 		if($('#checkbox_version').prop("checked")){
 			$('#prix').html('Prix : 10€');
-			$('#prix').attr('class',$(this).attr('data-textcolor'));
 		}else{
 			$('#prix').html('Prix : 25€');
-			$('#prix').attr('class',$(this).attr('data-textcolor'));
 		}
 		
 		

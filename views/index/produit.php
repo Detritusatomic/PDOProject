@@ -3,13 +3,13 @@
 		<div class="col s12 m12">
 			<h4>La page produit</h4>
 		</div>
-		<?= Produits::pageproduit($variables['bestProduits'][2])?>
+		<?= Produits::pageproduit($variables['produits'][12])?>
 	</div>
 		
 	<div class="row">
 		<div class="col m12">
 			<h4>Les infos détaillées</h4>
-			<p><strong>Résumé : </strong><?= $variables['bestProduits'][2]->description?></p>
+			<p><strong>Résumé : </strong><?= $variables['bestProduits'][1]->description?></p>
 			
 			<h4>Les détails chiants</h4>
 			<ul class="col s6">
@@ -38,7 +38,7 @@
 		</div>
 		<div class="col m3 s6">
 			<div class="jaquette">
-				<img class="materialboxed" data-caption="Deadpool" width="100%" src="../media/img/jaquette1.jpg">
+				<img class="materialboxed" data-caption="Deadpool" width="100%" src="media/img/jaquette1.jpg">
 			</div>
 			<h5><strong>Deadpool</strong></h5>
 			<p><strong>Description : </strong>Lorem ipsum dolor sit amet Lorem ipsum dolor ...</p>
