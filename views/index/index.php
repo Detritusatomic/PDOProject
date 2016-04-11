@@ -98,12 +98,12 @@
             <h4>Les gros kiffs</h4>
             <div class="row">
                 <div class="col s12">
-                    <?=Produits::display((int)$variables['kiffs'][0]['value'],'kiff')?>
+                    <?=Produits::display($variables['kiffs'][0],'kiff')?>
                 </div>
 			</div>
             <div class="row">
                 <div class="col s12">
-                    <?=Produits::display((int)$variables['kiffs'][1]['value'],'kiff')?>
+                    <?=Produits::display($variables['kiffs'][1],'kiff')?>
                 </div>
             </div>
         </div>

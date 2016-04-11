@@ -90,11 +90,11 @@ class Produits extends Entity {
     }
 	
 	public static function getKiffs(){
-		$sql = "SELECT value FROM config WHERE config.key ='_MISE_EN_AVANT_1_' OR config.key ='_MISE_EN_AVANT_2_'";
+		$sql = "SELECT * FROM config,produits WHERE (config.key ='_MISE_EN_AVANT_1_' OR config.key ='_MISE_EN_AVANT_2_') AND config.value=produits.id";
         $database = Database::getInstance();
         $req = $database->prepare($sql);
         $req->execute();
-	    return $array = $req->fetchAll(PDO::FETCH_ASSOC);
+	    return $array = $req->fetchAll(PDO::FETCH_OBJ);
 	}
 
 	public static function display($produit,$param=null){
