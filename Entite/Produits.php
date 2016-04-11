@@ -97,9 +97,10 @@ class Produits extends Entity {
 	    return $array = $req->fetchAll(PDO::FETCH_ASSOC);
 	}
 
-	public static function display($id,$param=null){
-		//recup notre produit
-		$produit=Produits::getProductById($id);
+	public static function display($produit,$param=null){
+		
+		//notre produit
+		$produit=Produits::getProductById($produit->id);
 		
 		//génération token pour id unique
 		$token='azertyuiopqsdfghjklmwcvbn123456789';
@@ -121,7 +122,7 @@ class Produits extends Entity {
 		$display='
 		<div class="card '.$cardcolor.' hoverable pointer no-margin-b">
 			<div class="card-image">
-				<img id="particle'.$id.$token.'" width="100%" src="'.$produit->getUrl_image().'">
+				<img id="particle'.$produit->getId().$token.'" width="100%" src="'.$produit->getUrl_image().'">
 			</div>
 			<div class="card-content '.$textcolor.'">
 				<h5><strong>'.$produit->getNom().'</strong></h5>
@@ -133,9 +134,58 @@ class Produits extends Entity {
 				<br/>
 				<button class="btn z-depth-0 '.$produit->getColor().' waves-effect waves-light ';
 		Session::isStarted()?$display.='addpanier':'';
-		$display.='" data-id="'.$id.$token.'">je veux !</button>
+		$display.='" data-id="'.$produit->getId().$token.'">je veux !</button>
 			</div>
 		</div>';
+		return $display;
+	}
+	
+	public static function pageproduit($produit,$param=null){
+		//notre produit
+		$produit=Produits::getProductById($produit->id);
+	
+		//génération token pour id unique
+		$token='azertyuiopqsdfghjklmwcvbn123456789';
+		$token=str_shuffle($token);
+		$token=substr($token,rand(0,3),rand(4,6));
+		
+		$display='
+		<div class="col s6">
+			<div class="jaquettebig relative">
+				<div class="center ruban '.$produit->getColor().' uppercase white-text">'.$produit->getBandeau().'</div>
+				<img id="particle'.$produit->getId().$token.'" class="materialboxed valign" data-caption="'.$produit->getNom().'" width="100%" src="'.$produit->getUrl_image().'">
+			</div>
+		</div>
+		<div class="col s6">
+			<h5><strong>'.$produit->getNom().'</strong></h5>
+			<ul class="no-padding">
+				<li>'.$produit->getStars().'</li>
+				<li class="'.$produit->getTextColor().'">'.$produit->getCategorie().'</li><br/>
+				<li><strong>Notre avis : </strong>'.$produit->getNote().'</li>
+				<li><strong>Genres : </strong>'.$produit->getGenre().'</li>
+				<li><strong>Synopsis : </strong> '.$produit->getSynopsis().'</li>
+				<li><strong>Editeurs : </strong> '.$produit->getActeurs().'</li>
+			</ul>
+
+			<div class="divider"></div>
+			
+			<div class="switch">
+				<label>
+					<h6 class="waves-effect btn-flat">Version boîte*</h6>
+					<input type="checkbox" id="checkbox_version">
+					<span class="lever '.$produit->getColor().'"></span>
+					<h6 class="waves-effect btn-flat">Version numérique</h6>
+				</label>
+			</div>
+			
+			<h5 id="prix" class="'.$produit->getTextColor().'">Prix : 25€</h5>
+			<br/>
+			<a class="addpanier btn waves-effect waves-light '.$produit->getColor().'" data-id="'.$produit->getId().$token.'" data-textcolor="'.$produit->getTextColor().'">Je veux !</a>
+			<div class="filler"></div>
+			<h6><small>*Le prix de la version boîte peut varier selon le mode de livraison</small></h6>
+		</div>
+		';
+		
 		return $display;
 	}
 	

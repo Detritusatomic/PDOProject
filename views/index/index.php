@@ -7,30 +7,30 @@
         <div class="col m6 s12">
             <div class="row">
                 <div class="col s12">
-                    <?=Produits::display($variables['produits'][0]->id)?>
+                    <?=Produits::display($variables['produits'][0])?>
                 </div>
             </div>
             <div class="row">
                 <div class="col s6">
-                     <?=Produits::display($variables['produits'][1]->id)?>
+                     <?=Produits::display($variables['produits'][1])?>
                 </div>
                 <div class="col s6">
-                     <?=Produits::display($variables['produits'][2]->id)?>
+                     <?=Produits::display($variables['produits'][2])?>
                 </div>
             </div>
         </div>
         <div class="col m6 s12">
             <div class="row">
                 <div class="col s6">
-                     <?=Produits::display($variables['produits'][3]->id)?>
+                     <?=Produits::display($variables['produits'][3])?>
                 </div>
                 <div class="col s6">
-                     <?=Produits::display($variables['produits'][4]->id)?>
+                     <?=Produits::display($variables['produits'][4])?>
                 </div>
             </div>
             <div class="row">
                 <div class="col s12">
-                     <?=Produits::display($variables['produits'][5]->id)?>
+                     <?=Produits::display($variables['produits'][5])?>
                 </div>
             </div>
         </div>
@@ -71,18 +71,18 @@
             <h4>Les gros succès</h4>
             <div class="row">
                 <div class="col s6">
-                    <?=Produits::display($variables['bestProduits'][1]->id)?>
+                    <?=Produits::display($variables['bestProduits'][1])?>
                 </div>
                 <div class="col s6">
-                    <?=Produits::display($variables['bestProduits'][2]->id)?>
+                    <?=Produits::display($variables['bestProduits'][2])?>
                 </div>
             </div>
             <div class="row">
                 <div class="col s6">
-                    <?=Produits::display($variables['bestProduits'][3]->id)?>
+                    <?=Produits::display($variables['bestProduits'][3])?>
                 </div>
                 <div class="col s6">
-                    <?=Produits::display($variables['bestProduits'][4]->id)?>
+                    <?=Produits::display($variables['bestProduits'][4])?>
                 </div>
             </div>
             <div class="row">

@@ -20,7 +20,87 @@ $(document).on('ready',function(){
 		$('#loginform').removeClass('show');
 		$('#contenupanier').toggleClass('show');
 	});
+	//////////////////////////FILTRES ARTICLES/////////////////////////////
+	$(document).on('click','.filtre',function(){
+		
+		var temp=$('.chip.tags span');
+
+		if (typeof(temp) != 'undefined'){
+			for(var i=0;i<temp.length;i++){
+				if(temp[i].innerHTML==this.text){
+					return;
+				}
+			}
+		}
+		
+		var newText=document.createTextNode(this.text);
+		
+		var newTag=document.createElement('span');
+		
+		newTag.appendChild(newText);
+		
+		var couleur=this.getAttribute('class').replace('filtre ','');
+		
+		newTag.setAttribute('class',couleur);
+		
+		var newChip=document.createElement('div');
+		
+		newChip.setAttribute('class','chip tags');
+		
+		newChip.appendChild(newTag);
+		
+		var newIcon=document.createElement('i');
+		
+		newIcon.setAttribute('class','material-icons closetag');
+		
+		var newText=document.createTextNode('close');
+		
+		newIcon.appendChild(newText);
+		
+		newChip.appendChild(newIcon);		
+		
+		var filtres=document.getElementById('filtres');
+		
+		filtres.appendChild(newChip);
+		
+		filtrerTableau();
+		
+	});
 	
+	$(document).on('click','.closetag',function(){filtrerTableau();});
+	
+	
+	
+	function filtrerTableau(){
+		var filtres=document.getElementById('filtres');
+	
+		var tab=document.getElementsByClassName('triable');
+		
+		if(filtres.childNodes.length==1){
+			for(var i=0;i<tab.length;i++){
+				tab[i].parentNode.className="";
+			}
+		}
+		
+		
+		for(var i=0;i<tab.length;i++){
+			for(var j=1;j<filtres.childNodes.length;j++){
+				if(tab[i].innerHTML!=filtres.childNodes[j].childNodes[0].innerHTML){
+					tab[i].parentNode.className="hidden";
+				}
+			}
+		}
+		for(var i=0;i<tab.length;i++){
+			for(var j=1;j<filtres.childNodes.length;j++){
+				if(tab[i].innerHTML==filtres.childNodes[j].childNodes[0].innerHTML){
+					tab[i].parentNode.className="";
+				}
+			}
+		}
+	}
+	
+	
+	//////////////////////////AJOUT PANIER/////////////////////////////////
 	$(document).on('click','.addpanier',function(){
 		// incrémenter les produits => en ajax plus tard 
 		function nbProduitsPlus(){
@@ -89,4 +169,23 @@ $(document).on('ready',function(){
 			}
 		});		
 	});
+	
+	//////////////////////////////////////CHOIX VERSION PRODUIT/////////////////////////////////
+	$(document).on('click','#checkbox_version',function(){
+	
+		if($('#checkbox_version').prop("checked")){
+			$('#prix').html('Prix : 10€');
+			$('#prix').attr('class',$(this).attr('data-textcolor'));
+		}else{
+			$('#prix').html('Prix : 25€');
+			$('#prix').attr('class',$(this).attr('data-textcolor'));
+		}
+		
+		
+		
+	
+	});
+	
+	
+	
 });

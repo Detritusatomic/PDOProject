@@ -83,7 +83,7 @@ a:hover{
 	position:fixed;
 	height:auto;
 	z-index:2;
-	right:-300px;
+	right:-320px;
 	top:70px;
 	transition:.2s;
 }
@@ -181,13 +181,18 @@ footer{
 }
 .ruban{
 	position:absolute;
-	width:100%;
+	width:50%;
+	border-radius:0 0 0 2px;
 	height:40px;
 	font-weight:bold;
 	line-height:40px;
+	top:0;
+	right:0;
 	opacity:.9;
 	z-index:2;
-	transform:rotate(315deg) translate(-100px,-60px);
+}
+.relative{
+	position:relative;
 }
 .row{
 	margin-bottom:15px;
@@ -248,6 +253,19 @@ footer .input-field input[type=text]:focus + label{
 footer .input-field .prefix.active{
 	color:white;
 }
+
+.switch label input[type=checkbox]:checked+.lever {
+	background-color:#00C853;
+}
+.switch label .lever {
+    background-color: #0091ea;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: white;
+}
+
+
 
 .particle{
 	position:absolute;

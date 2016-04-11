@@ -36,7 +36,7 @@
 					</div>
 				</div>
 				<div class="row center">
-					<button class="btn waves-effect waves-light" type="submit" name="action">Connexion
+					<button class="btn waves-effect waves-light brown" type="submit" name="action">Connexion
 					</button>
 				</div>
 				<p>Pas encore inscrit ? <a href="<?php echo __BASE__URI__; ?>login/register">Inscrivez-vous !</a></p>
@@ -77,7 +77,7 @@
 					<li class="divider"></li>
 					<li>Total<span class="right margin-sm-l">1500€</span></li>
 					<br/>
-					<li><a class="btn red darken-1 z-depth-0 waves-effect waves-light">j'achète</a></li>
+					<li><a class="btn brown z-depth-0 waves-effect waves-light">j'achète</a></li>
 				</ul>
 			</div>
 		</div>
