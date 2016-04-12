@@ -1,19 +1,15 @@
 <div class="wrap white z-depth-1">
 	<div class="row">
-		<div class="col s8">
-			<h4>Les articles frais</h4>
-		</div>		
-		<div class="col s4">
-			<h4>Les articles cools</h4>
-		</div>
+		<!------------------------ARTICLES FRAIS-------------------------->
 		<div class="col l8 s12">
+			<h4>Les articles frais</h4>
 			<div class="row">
 				<div class="col l6 m6 s12">
 					<div class="article-container card hoverable jaquette4 pointer no-margin-b">				
 						<img data-caption="Deadpool" width="100%" src="../../media/img/jaquette2.jpg">
 						<div class="article-caption card-content white">
 							<p>10/12/2018</p>
-							<p><strong>Borderlands 2</strong> - Le jeu qui possède des armes à l'infini</p><br/>
+							<p><strong class="uppercase">Borderlands 2</strong> - Le jeu qui possède des armes à l'infini.</p><br/>
 							<span class="right">87 <i class="material-icons">comment</i></span>										
 							<p><i class="material-icons orange-text">star star star star star</i></p>
 							<p class="orange-text">Jeux</p>
@@ -26,34 +22,60 @@
 					</div>
 				</div>
 				<div class="col l6 m6 s12">
-					<div class="article-container card hoverable jaquette4 pointer no-margin-b">				
-						<img data-caption="Deadpool" width="100%" src="../../media/img/jaquette1.jpg">
-						<div class="article-caption white padding-md-lr padding-xs-tb">
-							<p>
-								10/12/2018<br/>
-								<strong>Deadpool</strong> - Le film qui déboite un peu trop<br/>
-								<i class="material-icons blue-text">star star star star</i><br/>
-								<span class="blue-text">Films</span>
-								<span class="right">28 <i class="material-icons">comment</i></span>
-								<div class="chip">
-									<img src="../../media/img/avatar.png" alt="Contact Person">
-									Geoffrey HERMIN
-								</div>										
-							</p>
+					<div class="article-container card hoverable jaquette4 pointer no-margin-b">			
+						<img data-caption="Deadpool" width="100%" src="../../media/img/jaquette3.jpg">
+						<div class="article-caption card-content white">
+							<p>10/12/2018</p>
+							<p><strong class="uppercase">Les lapins crétins : tome 3</strong> - Une carotte pour les lecteurs ?</p><br/>
+							<span class="right">87 <i class="material-icons">comment</i></span>										
+							<p><i class="material-icons purple-text">star star star star star</i></p>
+							<p class="purple-text">BD</p>
+							<br/>
+							<div class="chip">
+								<img src="../../media/img/avatar.png" alt="Contact Person">
+								Geoffrey HERMIN
+							</div>						
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col m6 s12">
+				<div class="col s12">
 					<div class="card hoverable pointer white no-margin-b">
+						<img class="left" height="178px" src="../../media/img/jaquette1.jpg">
 						<div class="card-content truncate">
+							<span class="right">87 <i class="material-icons">comment</i></span>		
 							20/12/2048<br/>
-							<strong class="uppercase">Titeuf</strong> - Il serait sorti de la titepoule.<br/>
-							<span class="purple-text">BD</span><br/> 
+							<p><strong class="uppercase">Deadpool</strong> - Le film qui déboite un peu trop.</p><br/>
+							<p><i class="material-icons blue-text">star star star star star</i></p>							
+							<div class="chip right no-margin-b">
+								<img src="../../media/img/avatar.png" alt="Contact Person">
+								Geoffrey HERMIN
+							</div>
+							<span class="blue-text">Films</span>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="row">
+				<div class="col s12">
+					<div class="card hoverable pointer white no-margin-b">
+						<img class="left" height="178px" src="../../media/img/jaquette5.jpg">
+						<div class="card-content truncate">
+							<span class="right">9 <i class="material-icons">comment</i></span>		
+							20/12/2048<br/>
+							<p><strong class="uppercase">Borderlands 2 : DLC 4</strong> - Le jeu dans le jeu : le jeuception.</p><br/>
+							<p><i class="material-icons orange-text">star star star star star</i></p>							
+							<div class="chip right no-margin-b">
+								<img src="../../media/img/avatar.png" alt="Contact Person">
+								Geoffrey HERMIN
+							</div>
+							<span class="orange-text">Jeux</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col m6 s12">
 					<div class="card hoverable pointer white no-margin-b">
 						<div class="card-content truncate">
@@ -63,28 +85,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col m4 s12">
-					<div class="card z-depth-0 hoverable pointer white no-margin-b">
-						<div class="card-content truncate">
-							20/12/2048<br/>
-							<strong class="uppercase">Titeuf</strong> - Il serait sorti de la titepoule.<br/>
-							<span class="purple-text">BD</span><br/> 
-						</div>
-					</div>
-				</div>
-				<div class="col m4 s12">
-					<div class="card z-depth-0 hoverable pointer white no-margin-b">
-						<div class="card-content truncate">
-							20/12/2048<br/>
-							<strong class="uppercase">Titeuf</strong> - Il serait sorti de la titepoule.<br/>
-							<span class="purple-text">BD</span><br/> 
-						</div>
-					</div>
-				</div>
-				<div class="col m4 s12">
-					<div class="card z-depth-0 hoverable pointer white no-margin-b">
+				<div class="col m6 s12">
+					<div class="card hoverable pointer white no-margin-b">
 						<div class="card-content truncate">
 							20/12/2048<br/>
 							<strong class="uppercase">50 nuances de black</strong> - Une version africaine plus érrotique du blockbuster.<br/>
@@ -94,7 +96,9 @@
 				</div>
 			</div>
 		</div>
+		<!------------------------ARTICLES COOLS-------------------------->
 		<div class="col m4 s12">
+			<h4>Les articles cools</h4>
 			<div class="row">
 				<div class="col s12">
 					<div class="card hoverable pointer white no-margin-b">
@@ -139,9 +143,37 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col s12">
+					<div class="card hoverable pointer white no-margin-b">
+						<div class="card-content">
+							20/12/2048<br/>
+							<strong class="uppercase">Mozart</strong> - Un homme, né et mort sur un piano.<br/>
+							<span class="red-text">Musique</span><br/> 
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>	
 	</div>
-	<div id="all" class="row">
+	<!------------------------AUTEURS-------------------------->
+	<div class="row">
+		<div class="col s12">
+		
+			<h4>Les auteurs</h4>
+			<div class="chip">
+				<img src="../../media/img/avatar.png" alt="Contact Person">
+				Geoffrey HERMIN
+			</div>
+			<div class="chip">
+				<img src="../../media/img/avatar2.png" alt="Contact Person">
+				Christophe HACHIN
+			</div>
+		</div>
+	</div>
+	
+	<!------------------------TOUS LES ARTICLES-------------------------->
+	<div class="row">
 		<div class="col s12">
 			<h4>Tous les articles</h4>
 			<table class="responsive-table highlight">
@@ -155,7 +187,7 @@
 							<a class="filtre orange-text">Jeux</a> -
 							<a class="filtre red-text">Musique</a>
 						</p> 
-						<p id="filtres">Tags : </p>
+						<p id="filtres">Les tags : </p>
 						<th class="hide-on-large-only">Date</th>
 						<th class="hide-on-large-only">Thème</th>
 						<th class="hide-on-large-only">Titre</th>
