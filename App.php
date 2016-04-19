@@ -46,7 +46,7 @@ class App {
                 $controller_name = $this->controller . 'Controller';
                 $controleur = new $controller_name();
                 /** test protection du controller */
-                if ($controleur->system == 'protected' && !Session::isStarted()) {
+                if (isset($controleur->system) && $controleur->system == 'protected' && !Session::isStarted()) {
                     //redirection vers l'accueil
                     require_once './Controller/indexController.php';
                     //renvoyer vers l'index

@@ -10,7 +10,10 @@ class AdminController extends Controller {
     public function indexAction() {
         //recuperer le nombre de produits
         $nb_products = Produits::getNbProduits();
-        $params['nbProduits'] = $nb_products;
-        $this->moteur_vue->loadVueAdmin('admin/index.php', $params);
+        $nb_categories = Categories::getNbCategories();
+        $this->moteur_vue->loadVueAdmin('admin/index.php', array(
+            'nbProduits' => $nb_products,
+            'nbCategories' => $nb_categories
+        ));
     }
 }

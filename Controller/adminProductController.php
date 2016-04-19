@@ -51,11 +51,12 @@ class adminProductController extends Controller {
         }
         
         $produit = Produits::getProductById((int)$id);
-        $categories = Categories::getCategories();
-        $params['produit'] = $produit;
-        $params['categories'] = $categories;
+        $categories = Categories::getCategories(); 
         if($produit)
-            $this->moteur_vue->loadVueAdmin('admin/product/edit.php', $params);
+            $this->moteur_vue->loadVueAdmin('admin/product/edit.php', array(
+                'produit' => $produit,
+                'categories' => $categories,
+            ));
         else
             $this->moteur_vue->redirect('adminProduct', 'index');
     }

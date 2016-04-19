@@ -13,6 +13,7 @@ require_once './Class/Session.class.php';
 require_once './Class/Post.class.php';
 require_once './Class/Token.class.php';
 require_once './Class/Upload.class.php';
+require_once './Class/Tools.class.php';
 
 //charger les entites
 require_once './Entite/Class/Entity.php';
@@ -21,6 +22,7 @@ require_once './Entite/Categories.php';
 require_once './Entite/Commandes.php';
 require_once './Entite/Produits.php';
 require_once './Entite/Config.php';
+require_once './Entite/Format.php';
 
 Session::start(); //start the session
 Session::set("start", true);

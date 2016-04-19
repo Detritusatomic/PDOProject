@@ -13,6 +13,9 @@ class Categories extends Entity {
     public $in_menu;
     public $description;
     public $color;
+    public $deleted;
+    public $slug;
+    public $id_format;
 
     public function __construct() {
         parent::__construct();
@@ -25,7 +28,7 @@ class Categories extends Entity {
      * @return type
      */
     public static function getCategories() {
-        $sql = "SELECT * FROM categories";
+        $sql = "SELECT * FROM categories where deleted = 0";
         $database = Database::getInstance();
         $req = $database->prepare($sql);
         $req->execute();
@@ -67,14 +70,41 @@ class Categories extends Entity {
      * @return type
      */
     public static function getMenu() {
-        $sql = "SELECT nom FROM categories WHERE in_menu = 1";
+        $sql = "SELECT nom, slug FROM categories WHERE in_menu = 1 AND deleted = 0";
         $database = Database::getInstance();
         $req = $database->prepare($sql);
         $req->execute();
         return $array = $req->fetchAll(PDO::FETCH_ASSOC);
     }
     
+    public static function getNbCategories(){
+        $sql = "SELECT * FROM categories WHERE deleted = 0";
+        $database = Database::getInstance();
+        $req = $database->prepare($sql);
+        $req->execute();
+        return $req->rowCount();
+    }
     
+    public static function getCategorieBySlug($slug){
+        $sql = "SELECT nom FROM categories WHERE deleted = 0 AND slug = '" . $slug . "'";
+        $database = Database::getInstance();
+        $req = $database->prepare($sql);
+        $req->execute();
+        return $array = $req->fetchAll(PDO::FETCH_ASSOC);
+    }
+    
+    /** non static */
+    public function save(){
+        $database = Database::getInstance();
+        $sql = "INSERT INTO " . $this->table . " (nom, description, in_menu, color, slug) "
+                . "VALUES (" . $database->quote($this->nom) . ", '" . html_entity_decode($this->description) . "', " . $database->quote($this->in_menu) .
+                ", " . $database->quote($this->color) .", '" . strtolower($this->slug) . "')";
+        $req = $database->prepare($sql);
+        $req->execute();
+        return true;
+    }
+
+
 
     /** getters and setter */
     function getId() {
@@ -92,5 +122,53 @@ class Categories extends Entity {
     function setNom($nom) {
         $this->nom = $nom;
     }
+    function getIn_menu() {
+        return $this->in_menu;
+    }
+
+    function getDescription() {
+        return $this->description;
+    }
+
+    function getColor() {
+        return $this->color;
+    }
+
+    function setIn_menu($in_menu) {
+        $this->in_menu = $in_menu;
+    }
+
+    function setDescription($description) {
+        $this->description = $description;
+    }
+
+    function setColor($color) {
+        $this->color = $color;
+    }
+
+    function getDeleted() {
+        return $this->deleted;
+    }
+
+    function getSlug() {
+        return $this->slug;
+    }
+
+    function setDeleted($deleted) {
+        $this->deleted = $deleted;
+    }
+
+    function setSlug($slug) {
+        $this->slug = $slug;
+    }
+    function getId_format() {
+        return $this->id_format;
+    }
+
+    function setId_format($id_format) {
+        $this->id_format = $id_format;
+    }
+
+
 
 }

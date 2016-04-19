@@ -8,6 +8,6 @@
 class PageNotFoundController {
     
     public function indexAction(){
-        die('erreur 404 a foutre ici maggle');
+        die('erreur 404');
     }
 }
