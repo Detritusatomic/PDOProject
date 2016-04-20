@@ -7,7 +7,8 @@
         <meta name="theme-color" content="#3e2723">
         <link rel="stylesheet" type="text/css" href="//geoffrey-hermin.hol.es/PDOProject/media/css/materialize.min.css">
         <link rel="stylesheet" type="text/css" href="//geoffrey-hermin.hol.es/PDOProject/media/css/styles.css">
-        <script type="text/javascript" src="//geoffrey-hermin.hol.es/PDOProject/media/js/jquery-2.1.4.min.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script type="text/javascript" src="//geoffrey-hermin.hol.es/PDOProject/media/js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="//geoffrey-hermin.hol.es/PDOProject/media/js/materialize.min.js"></script>
         <script type="text/javascript" src="//geoffrey-hermin.hol.es/PDOProject/media/js/scripts.js"></script>
     </head>
