@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>H1RM1</title>
         <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <!--Import Google Icon Font-->
-        <link href="//127.0.0.1/PDOproject/media/css/materialize.min.css" rel="stylesheet"/>
-        <link href="//127.0.0.1/PDOproject/media/css/styles.css" rel="stylesheet"/>
-        <script type="text/javascript" src="//127.0.0.1/PDOproject/media/js/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="//127.0.0.1/PDOproject/media/js/materialize.min.js"></script>
-        <script type="text/javascript" src="//127.0.0.1/PDOproject/media/js/scripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>H1RM1</title>
+        <meta name="theme-color" content="#3e2723">
+        <link rel="stylesheet" type="text/css" href="//geoffrey-hermin.hol.es/PDOProject/media/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="//geoffrey-hermin.hol.es/PDOProject/media/css/styles.css">
+        <script type="text/javascript" src="//geoffrey-hermin.hol.es/PDOProject/media/js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="//geoffrey-hermin.hol.es/PDOProject/media/js/materialize.min.js"></script>
+        <script type="text/javascript" src="//geoffrey-hermin.hol.es/PDOProject/media/js/scripts.js"></script>
     </head>
     <header>
 	
@@ -112,4 +112,4 @@
         </nav>
     </header>
 
-    <body>
+    <body>	

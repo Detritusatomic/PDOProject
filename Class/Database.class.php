@@ -17,12 +17,12 @@ class Database {
 
     public function __construct() {
         try {
-            $this->db_server = '127.0.0.1';
-            $this->db_name = 'h1rm1';
-            $this->db_user = 'root';
-            $this->db_pass = '';
+            $this->db_server = 'mysql.hostinger.fr';
+            $this->db_name = 'u858125047_h1rm1';
+            $this->db_user = 'u858125047_h1rm1';
+            $this->db_pass = 'geoffrey1996';
             $this->db_params = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'");
-            $this->database = new PDO('mysql:host=' . $this->db_server . ';dbname=' . $this->db_name .'Charset=UTF-8', "root", '', $this->db_params);
+            $this->database = new PDO('mysql:host=' . $this->db_server . ';dbname=' . $this->db_name, $this->db_user , $this->db_pass , $this->db_params);
         } catch (Exception $ex) {
             die('erreur bdd' . $ex->getMessage());
         }
@@ -51,7 +51,11 @@ class Database {
     }
 
     public static function getInstance() {
-        $bd = new PDO('mysql:host=127.0.0.1;dbname=h1rm1;Charset=UTF-8', "root", '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+		$db_server = 'mysql.hostinger.fr';
+		$db_name = 'u858125047_h1rm1';
+		$db_user = 'u858125047_h1rm1';
+		$db_pass = 'geoffrey1996';
+        $bd = new PDO('mysql:host=' . $db_server . ';dbname=' . $db_name, $db_user , $db_pass , $db_params);
         return $bd;
     }
 
