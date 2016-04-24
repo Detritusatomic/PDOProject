@@ -12,20 +12,20 @@
             </div>
             <div class="row">
                 <div class="col s6">
-                     <?=Produits::display($variables['produits'][1])?>
+                     <?=Produits::display($variables['produits'][3])?>
                 </div>
                 <div class="col s6">
-                     <?=Produits::display($variables['produits'][2])?>
+                     <?=Produits::display($variables['produits'][4])?>
                 </div>
             </div>
         </div>
         <div class="col m6 s12">
             <div class="row">
                 <div class="col s6">
-                     <?=Produits::display($variables['produits'][3])?>
+                     <?=Produits::display($variables['produits'][1])?>
                 </div>
                 <div class="col s6">
-                     <?=Produits::display($variables['produits'][4])?>
+                     <?=Produits::display($variables['produits'][2])?>
                 </div>
             </div>
             <div class="row">
