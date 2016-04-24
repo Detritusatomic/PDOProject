@@ -113,21 +113,19 @@
         <div class="col s12">
             <h4>La liste des <?=$variables['categorie'][0]['nom']?></h4>
             <div class="row">
-                <div class="col s12">
-                    <table class="responsive-table highlight">
-                        <tbody>
-                        <?php foreach ($variables['produits'] as $key => $p) : ?>
-                            <tr class="row">
-                                <td class="col s1"><img class="responsive-img" src="<?= $p->url_image; ?>" height="160"/></td>
-                                <td class="col s2"><?=$p->nom;?></td>
-                                <td class="col s2"><?=$p->genre;?></td>
-                                <td class="col s1 <?=$p->color;?>"><?=$p->avis_site;?>/10</td>
-                                <td class="col s5"><?=$p->synopsis;?></td>
-                            </tr>
-                        <?php endforeach; ?>
-                        </tbody>
-                    </table>
-                </div>
+                <table class="responsive-table highlight">
+                    <tbody>
+                    <?php foreach ($variables['produits'] as $key => $p) : ?>
+                        <tr class="row">
+                            <td class="col s2"><img class="responsive-img" src="<?= $p->url_image; ?>" height="160"/></td>
+                            <td class="col s2"><?=$p->nom;?></td>
+                            <td class="col s2"><?=$p->genre;?></td>
+                            <td class="col s1 <?=$p->color;?>"><?=$p->avis_site;?>/10</td>
+                            <td class="col s5"><?=$p->synopsis;?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
