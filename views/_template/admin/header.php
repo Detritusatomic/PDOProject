@@ -24,7 +24,7 @@
                     <ul id='dropdown-plus' class='dropdown-content'>
                         <li><a href="#!">Paramètres</a></li>
                         <li><a href="#!">Déconnexion</a></li>
-                        <li><a href="#">Quitter</a></li>
+                        <li><a href="<?php echo __BASE__URI__; ?>">Quitter</a></li>
                     </ul>
                 </ul>
                 <ul id="slide-out" class="side-nav fixed">
