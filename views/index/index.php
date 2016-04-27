@@ -6,25 +6,25 @@
         </div>
         <div class="col m6 s12">
             <div class="row">
-                <div class="col s12">
+                <div class="col m12">
                     <?=Produits::display($variables['produits'][0])?>
                 </div>
             </div>
             <div class="row">
-                <div class="col s6">
+                <div class="col l6 m12 s12">
                      <?=Produits::display($variables['produits'][3])?>
                 </div>
-                <div class="col s6">
+                <div class="col l6 m12 s12">
                      <?=Produits::display($variables['produits'][4])?>
                 </div>
             </div>
         </div>
         <div class="col m6 s12">
             <div class="row">
-                <div class="col s6">
+                <div class="col l6 m12 s12">
                      <?=Produits::display($variables['produits'][1])?>
                 </div>
-                <div class="col s6">
+                <div class="col l6 m12 s12">
                      <?=Produits::display($variables['produits'][2])?>
                 </div>
             </div>
@@ -38,10 +38,10 @@
 	
 	<!-------------------------------------------SELECTION------------------------------------------->
 	<div class="row">
-		<div class="col s12">
+		<div class="col m12">
 			<h4>La séléction</h4>
 		</div>
-		<div class="col s6 margin-l-b">
+		<div class="col m6 s12 margin-l-b">
 			<div class="carousel">
 				<?php for($i=0;$i<10;$i++){echo'
 					<a class="carousel-item preview" href="#img'.$variables['produits'][$i]->id.'" data-nom="'.$variables['produits'][$i]->nom.'" data-description="'.$variables['produits'][$i]->synopsis.'" data-couleur="'.Categories::getNameById($variables['produits'][$i]->id_categorie)['color'].'" data-categorie="'.Categories::getNameById($variables['produits'][$i]->id_categorie)['nom'].'" data-note="'.$variables['produits'][$i]->avis_site.'">
@@ -50,7 +50,7 @@
 				}?>
 			</div>
 		</div>
-		<div class="col s6">
+		<div class="col m6 s12">
 			<div class="card z-depth-0">
 				<div class="card-content">
 					<h5 id="view-nom" class="bold"></h5>
@@ -66,44 +66,37 @@
 		</div>
 	</div>
     <div class="row">
+        <!-------------------------------------------LES GROS KIFFS------------------------------------------->
+        <div class="col l5 m6 s12 push-l7 push-m6 ">
+            <h4>Les gros kiffs</h4>
+            <div class="row">
+                <div class="col m12">
+                    <?=Produits::display($variables['kiffs'][0],'kiff')?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m12">
+                    <?=Produits::display($variables['kiffs'][1],'kiff')?>
+                </div>
+            </div>
+        </div>
 	<!-------------------------------------------LES GROS SUCCES------------------------------------------->
-        <div class="col m7 s12">
+        <div class="col l7 m6 s12 pull-l5 pull-m6">
             <h4>Les gros succès</h4>
             <div class="row">
-                <div class="col s6">
+                <div class="col l6 m12 s12">
                     <?=Produits::display($variables['bestProduits'][1])?>
                 </div>
-                <div class="col s6">
+                <div class="col l6 m12 s12">
                     <?=Produits::display($variables['bestProduits'][2])?>
                 </div>
             </div>
             <div class="row">
-                <div class="col s6">
+                <div class="col l6 m12 s12">
                     <?=Produits::display($variables['bestProduits'][3])?>
                 </div>
-                <div class="col s6">
+                <div class="col l6 m12 s12">
                     <?=Produits::display($variables['bestProduits'][4])?>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <p class="center"><a class="grey-text" href="#">Voir plus de gros succés</a></p>
-                </div>
-            </div>
-        </div>
-		
-		<!-------------------------------------------LES GROS KIFFS------------------------------------------->
-        
-		<div class="col m5 s12">
-            <h4>Les gros kiffs</h4>
-            <div class="row">
-                <div class="col s12">
-                    <?=Produits::display($variables['kiffs'][0],'kiff')?>
-                </div>
-			</div>
-            <div class="row">
-                <div class="col s12">
-                    <?=Produits::display($variables['kiffs'][1],'kiff')?>
                 </div>
             </div>
         </div>
