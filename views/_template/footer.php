@@ -1,3 +1,7 @@
+<a id="totop" class="btn-floating btn-large tooltipped waves-effect waves-light brown darken-4" data-position="left" data-delay="50" data-tooltip="L' ascenceur !" onclick="$('html, body').animate({scrollTop: 0 }, 'slow');return false;">
+    <i class="material-icons">navigation</i>
+</a>
+
 <footer class="page-footer brown darken-4">
     <div class="wrap">
         <div class="row">
