@@ -1,33 +1,1 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-class News extends Entity {
-    
-    public $id;
-    public $titre;
-    public $contenu;
-    public $id_categorie;
-    
-    public function __construct() {
-        parent::__construct();
-        $this->table = 'news';
-        $this->class = __CLASS__;
-    }
-    
-    /**
-     * Method : Recuperer tous les news
-     * @return Produit object
-     */
-    public static function getNews() {
-        $sql = "SELECT * FROM news";
-        $database = Database::getInstance();
-        $req = $database->prepare($sql);
-        $req->execute();
-        return $array = $req->fetchAll(PDO::FETCH_OBJ);
-    }
-    
-}
+<?php/* * To change this license header, choose License Headers in Project Properties. * To change this template file, choose Tools | Templates * and open the template in the editor. */class News extends Entity {    public $id;    public $titre;    public $contenu;    public $date;    public $id_categorie;    public $id_produit;    public $id_user;    public function __construct() {        parent::__construct();        $this->table = 'news';        $this->class = __CLASS__;    }    /**     * Method : Recuperer tous les news     * @return Produit object     */    public static function getNews() {        $sql = "SELECT * FROM news";        $database = Database::getInstance();        $req = $database->prepare($sql);        $req->execute();        return $array = $req->fetchAll(PDO::FETCH_OBJ);    }    public function save() {        $database = Database::getInstance();        $sql = "INSERT INTO " . $this->table . " (titre, contenu, date, id_categorie, id_produit, id_user) "                . "VALUES (" . $database->quote($this->titre) . ", '" . html_entity_decode($this->contenu) . "', " . $database->quote($this->date) .                ", " . $database->quote($this->id_categorie) . ", " . $database->quote($this->id_produit) . ", " . $database->quote($this->id_user) . ")";        $req = $database->prepare($sql);        $req->execute();        return true;    }    function getId() {        return $this->id;    }    function getTitre() {        return $this->titre;    }    function getContenu() {        return $this->contenu;    }    function getDate() {        return $this->date;    }    function getId_categorie() {        return $this->id_categorie;    }    function getId_produit() {        return $this->id_produit;    }    function getId_user() {        return $this->id_user;    }    function setId($id) {        $this->id = $id;    }    function setTitre($titre) {        $this->titre = $titre;    }    function setContenu($contenu) {        $this->contenu = $contenu;    }    function setDate($date) {        $this->date = $date;    }    function setId_categorie($id_categorie) {        $this->id_categorie = $id_categorie;    }    function setId_produit($id_produit) {        $this->id_produit = $id_produit;    }    function setId_user($id_user) {        $this->id_user = $id_user;    }}

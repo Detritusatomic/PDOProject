@@ -56,7 +56,19 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href='#'><i class="material-icons left">create</i>Articles</a></li>
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <a class="collapsible-header">Articles<i class="material-icons left">create</i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href='<?php echo __BASE__URI__; ?>adminArticle/index'><i class="material-icons left">keyboard_arrow_right</i>Toutes les articles</a></li>
+                                        <li><a href='<?php echo __BASE__URI__; ?>adminArticle/create'><i class="material-icons left">keyboard_arrow_right</i>Créer un article</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
                 <a href="#" data-activates="slide-out" class="button-collapse show-on-large"></a>
             </div>
