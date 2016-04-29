@@ -1,8 +1,10 @@
-<a id="totop" class="btn-floating btn-large tooltipped waves-effect waves-light brown darken-4" data-position="left" data-delay="50" data-tooltip="L' ascenceur !" onclick="$('html, body').animate({scrollTop: 0 }, 'slow');return false;">
+<a id="totop" class="btn-floating btn-large tooltipped waves-effect waves-light  <?php
+if(isset($variables['categorie'][0]))echo str_replace('-text','',$variables['categorie'][0]['color']).' darken-2';else echo 'brown darken-3';?>brown darken-3" data-position="left" data-delay="50" data-tooltip="L' ascenceur !" onclick="$('html, body').animate({scrollTop: 0 }, 'slow');return false;">
     <i class="material-icons">navigation</i>
 </a>
 
-<footer class="page-footer brown darken-4">
+<footer class="page-footer  <?php
+if(isset($variables['categorie'][0]))echo str_replace('-text','',$variables['categorie'][0]['color']).' darken-2';else echo 'brown darken-4';?>">
     <div class="wrap">
         <div class="row">
             <div class="col l6 s12">

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a11927da-e675-44a6-9e11-8db17e25e2f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_template/footer.php" afterPath="$PROJECT_DIR$/views/_template/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_template/header.php" afterPath="$PROJECT_DIR$/views/_template/header.php" />
     </list>
     <ignored path="PDOProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +25,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/categorie/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.8387096">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/_template/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="94" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
+            <state vertical-scroll-proportion="0.15511164">
+              <caret line="6" column="112" selection-start-line="6" selection-start-column="112" selection-end-line="6" selection-end-column="112" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/_template/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.8955224">
+              <caret line="171" column="120" selection-start-line="171" selection-start-column="120" selection-end-line="171" selection-end-column="120" />
+              <folding>
+                <marker date="1461950104756" expanded="true" signature="5022:5560" placeholder="..." />
+                <marker date="1461950104756" expanded="true" signature="5058:5560" placeholder="..." />
+                <marker date="1461950104756" expanded="true" signature="5097:5560" placeholder="..." />
+                <marker date="1461950104756" expanded="true" signature="5188:5560" placeholder="..." />
+                <marker date="1461950104756" expanded="true" signature="5880:5906" placeholder="..." />
+                <marker date="1461950104756" expanded="true" signature="5907:6786" placeholder="..." />
+                <marker date="1461950104756" expanded="true" signature="6222:6555" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/product/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="25.548388">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -53,12 +102,12 @@
         <option value="&lt;a03a7fea-57bd-4008-8c75-d5f498b57f4b&gt;/modules/blocksearch/blocksearch-top.tpl" />
         <option value="$PROJECT_DIR$/views/categorie/index.php" />
         <option value="$PROJECT_DIR$/media/js/materialize.min.js" />
-        <option value="$PROJECT_DIR$/views/_template/header.php" />
         <option value="$PROJECT_DIR$/views/index/index.php" />
         <option value="&lt;a03a7fea-57bd-4008-8c75-d5f498b57f4b&gt;/themes/VivaShop/modules/blocksearch/blocksearch-top.tpl" />
         <option value="&lt;a03a7fea-57bd-4008-8c75-d5f498b57f4b&gt;/themes/VivaShop/product.tpl" />
         <option value="&lt;a03a7fea-57bd-4008-8c75-d5f498b57f4b&gt;/themes/VivaShop/css/global.css" />
         <option value="&lt;a03a7fea-57bd-4008-8c75-d5f498b57f4b&gt;/modules/blockcart/blockcart.tpl" />
+        <option value="$PROJECT_DIR$/views/_template/header.php" />
         <option value="$PROJECT_DIR$/views/_template/footer.php" />
       </list>
     </option>
@@ -168,6 +217,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="categorie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PDOProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PDOProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PDOProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PDOProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -511,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/_template/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="194" column="40" selection-start-line="194" selection-start-column="40" selection-end-line="194" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5511163">
@@ -548,18 +630,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/product/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="25.548388">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/categorie/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.161291">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        <state vertical-scroll-proportion="-2.8387096">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_template/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8955224">
+          <caret line="171" column="120" selection-start-line="171" selection-start-column="120" selection-end-line="171" selection-end-column="120" />
+          <folding>
+            <marker date="1461950104756" expanded="true" signature="5022:5560" placeholder="..." />
+            <marker date="1461950104756" expanded="true" signature="5058:5560" placeholder="..." />
+            <marker date="1461950104756" expanded="true" signature="5097:5560" placeholder="..." />
+            <marker date="1461950104756" expanded="true" signature="5188:5560" placeholder="..." />
+            <marker date="1461950104756" expanded="true" signature="5880:5906" placeholder="..." />
+            <marker date="1461950104756" expanded="true" signature="5907:6786" placeholder="..." />
+            <marker date="1461950104756" expanded="true" signature="6222:6555" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/_template/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="94" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
+        <state vertical-scroll-proportion="0.15511164">
+          <caret line="6" column="112" selection-start-line="6" selection-start-column="112" selection-end-line="6" selection-end-column="112" />
           <folding />
         </state>
       </provider>
