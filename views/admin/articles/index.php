@@ -13,8 +13,8 @@
             <th>Titre</th>
             <th>Image</th>
             <th>Contenu</th>
-            <th>Produit</th>
             <th>Catégorie</th>
+            <th>Produit</th>
             <th>Créateur</th>
             <th>Date</th>
             <th>Actions</th>
@@ -24,19 +24,13 @@
                     <tr id="tr<?= $article->id; ?>"> 
                         <td><?= $article->id; ?></td>
                         <td><?= $article->titre; ?></td>
-                        <td>
-                            <?php 
-                            $url = Produits::getProductImage($article->id_produit);
-                            ?>
-                            <img class="responsive-img" src="<?= $url['url_image']; ?>" width="150" height="150"/>
-                        </td>
+                        <td><img class="responsive-img" src="<?= Produits::getProductImage($article->id_produit)['url_image']; ?>" width="150" height="150"/></td>
                         <td><?= substr(strip_tags($article->contenu), 0, 300) . '...'; ?></td>
-                        <td><?= $article->categorie; ?></td>
+                        <td><?= $article->id_categorie; ?></td>
+                        <td><?= $article->id_produit; ?></td>
                         <td><?= $article->id_user; ?></td>
                         <td><?= $article->date; ?></td>
-                        <td>
-
-                        </td>
+                        <td>Action</td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

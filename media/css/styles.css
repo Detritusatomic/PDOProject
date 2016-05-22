@@ -55,6 +55,15 @@ a:hover{
 	text-align:center!important;
 	text-decoration:none!important;
 	font-size:20px!important;
+	line-height:70px!important;
+}
+.shrink .navlink{
+	line-height:40px!important;
+	font-size:17px!important;
+}
+.shrink .side-nav .navlink{
+	font-size:20px!important;
+	line-height:70px!important;
 }
 .navlink:hover{
 	cursor:pointer;
@@ -71,11 +80,21 @@ a:hover{
 	border:none;
 	z-index:999;
 	border-radius:0;
+	transition:.1s;
+}
+.navbar.shrink{
+	height:40px;
+	line-height:40px;
+	transition:.1s;
 }
 #hover{
+	height:0px;
 	position:absolute;
-	height:0;
 	background-color:rgba(255,255,255,.8);
+	transition:.2s;
+}
+.shrink #hover{
+	height:0px;
 	transition:.2s;
 }
 #loginform{
@@ -85,6 +104,9 @@ a:hover{
 	right:-320px;
 	top:70px;
 	transition:.2s;
+}
+.shrink ~ #loginform{
+	top:40px;
 }
 #loginform.show{
 	right:0;
@@ -98,8 +120,28 @@ a:hover{
 	top:70px;
 	transition:.2s;
 }
+.shrink ~ #contenupanier{
+	top:40px;
+}
+
 #contenupanier.show{
 	right:0;
+}
+nav i{
+	line-height:70px!important;
+	height:70px!important;
+}
+nav.shrink i{
+	line-height:40px!important;	
+	height:40px!important;
+}
+
+.side-nav li:hover, 
+.side-nav li.active{
+	background-color:rgba(0,0,0,.3);
+}
+.side-nav li{
+	display:block;
 }
 
 /*****************	Footer	*****************/
@@ -114,6 +156,10 @@ footer{
 
 
 /*****************	Custom classes	*****************/
+.carousel .carousel-item img {
+	max-height:280px!important;
+	height:auto!important;
+}
 .label{
 	color:white!important;
 }
@@ -156,6 +202,8 @@ footer{
 	max-height:410px;
 	height:auto;
 }
+
+
 .article-container{
 	position:relative;
 }
@@ -175,6 +223,7 @@ footer{
 .pointer{
 	cursor:pointer;
 }
+.overflow-hidden{overflow:hidden;}
 .height-fluid{
 	height:100%;
 }
@@ -218,6 +267,9 @@ footer{
 .filler{
 	position:relative;
 	height:100px;
+}
+.zztop{
+	z-index:998!important;
 }
 .card-profile-image{
 	position:absolute;
@@ -295,6 +347,10 @@ footer .input-field .prefix.active{
 	padding-left:0!important;
 	padding-right:0!important;
 }
+.no-padding-lb,.no-padding-bl{
+	padding-left:0!important;
+	padding-bottom:0!important;
+}
 
 .padding-xs{
 	padding:5px;
@@ -340,7 +396,7 @@ footer .input-field .prefix.active{
 }
 
 .padding-sm{
-	padding:10px;
+	padding:10px!important;
 }	
 .padding-sm-t{
 	padding-top:10px;
@@ -354,10 +410,10 @@ footer .input-field .prefix.active{
 }
 
 .padding-md-t{
-	padding-top:15px;
+	padding-top:15px!important;
 }
 .padding-md-r{
-	padding-right:15px;
+	padding-right:15px!important;
 }
 .padding-md-b{
 	padding-bottom:15px;
@@ -367,12 +423,12 @@ footer .input-field .prefix.active{
 }
 
 .padding-md-tr,.padding-md-rt{
-	padding-top:15px;
-	padding-right:15px;
+	padding-top:15px!important;
+	padding-right:15px!important;
 }
 .padding-md-tb,.padding-md-bt{
-	padding-top:15px;
-	padding-bottom:15px
+	padding-top:15px!important;
+	padding-bottom:15px!important;
 }
 .padding-md-tl,.padding-md-lt{
 	padding-top:15px;
@@ -391,6 +447,12 @@ footer .input-field .prefix.active{
 	padding-bottom:15px;
 	padding-left:15px;
 }
+.padding-md-tr,.padding-md-trb{
+	padding-top:15px!important;
+	padding-right:15px!important;
+	padding-bottom:15px!important;
+}
+
 /*****************	Margins	*****************/
 .no-margin{
 	margin:0!important;
@@ -405,9 +467,11 @@ footer .input-field .prefix.active{
 	margin-top:0!important;
 	margin-bottom:0!important;
 }
+.margin-xs-t{
+	margin-top:5px!important;
+}
 .margin-sm-l{
 	margin-left:10px!important;
-	
 }
 .margin-sm-r{
 	margin-right:10px!important;
@@ -446,6 +510,24 @@ footer .input-field .prefix.active{
 }
 .hover-white:hover{
 	color:white!important;
+}
+
+/*****************	Media queries	*****************/
+@media screen and (max-width: 600px) {
+	.carousel{
+		margin-top:-50px!important;
+		margin-bottom:-100px!important;
+	}
+	.jaquette4{
+		height:auto;
+		position:relative;
+		overflow:hidden;
+	}
+	.jaquette4>img:not(.active){
+		width:100%;
+		height:auto;
+		max-height:inherit;
+	}
 }
 
 

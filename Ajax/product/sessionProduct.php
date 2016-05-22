@@ -8,11 +8,15 @@
 session_start();
 require_once '../../Entite/Class/Entity.php';
 require_once '../../Entite/Produits.php';
+require_once '../../Entite/Categories.php';
 require_once '../../Class/Database.class.php';
 require_once '../../Class/Session.class.php';
 $id = $_POST['id'];
 //recuperation du produit avec l'entite produit
 $produit = Produits::getProductById($id);
+
+$produit->categorie = Categories::getNameById($produit->id_categorie);
+
 if(Session::isStarted())
     $_SESSION['produit'][] = $produit;
 //verifier si un utilisateur est connecté

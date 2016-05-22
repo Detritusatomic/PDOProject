@@ -5,9 +5,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-class PageNotFoundController {
+class PageNotFoundController extends Controller{
     
     public function indexAction(){
-        die('erreur 404');
+        $this->moteur_vue->loadVue('index/404.php');
     }
 }

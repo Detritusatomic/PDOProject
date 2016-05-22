@@ -1,4 +1,4 @@
-<a id="totop" class="btn-floating btn-large tooltipped waves-effect waves-light  <?php
+<a id="totop" class="btn-floating btn-large tooltipped waves-effect waves-light  zztop <?php
 if(isset($variables['categorie'][0]))echo str_replace('-text','',$variables['categorie'][0]['color']).' darken-2';else echo 'brown darken-3';?>brown darken-3" data-position="left" data-delay="50" data-tooltip="L' ascenceur !" onclick="$('html, body').animate({scrollTop: 0 }, 'slow');return false;">
     <i class="material-icons">navigation</i>
 </a>
@@ -20,12 +20,13 @@ if(isset($variables['categorie'][0]))echo str_replace('-text','',$variables['cat
             <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Le GPS</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3" href="<?= __BASE__URI__; ?>index/index">Accueil</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Séries</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Films</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Jeux</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Musiques</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Bandes dessinée</a></li>
+                    <li><a class="white-text" href="<?php echo __BASE__URI__; ?>index/index">Accueil</a></li>
+
+                    <?php foreach (Categories::getMenu() as $item) : ?>
+                        <li><a class="white-text" href="<?php echo __BASE__URI__; ?>categories/index/<?php echo $item['slug']; ?>"><?php echo $item['nom']; ?></a></li>
+                    <?php endforeach; ?>
+                    <li><a class="white-text" href="<?php echo __BASE__URI__; ?>index/index">Blog</a></li>
+
                 </ul>
             </div>
         </div>
