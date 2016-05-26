@@ -152,6 +152,10 @@ footer{
 	position:fixed;
 	right:10px;
 	bottom:30px;
+	transition:.2s;
+}
+#totop.bot{
+	bottom:50px;
 }
 
 
@@ -214,7 +218,7 @@ footer{
 	width:100%;
 	position:absolute;
 	z-index:2;
-	bottom:-140px;
+	bottom:-200px;
 	transition:.2s ease-in-out;
 }
 .btn-justified{
@@ -241,6 +245,9 @@ footer{
 }
 .relative{
 	position:relative;
+}
+.absolute{
+	position:absolute;
 }
 .row{
 	margin-bottom:15px;
@@ -288,11 +295,11 @@ footer{
 }
 
 footer .input-field label{
-	color:#1565C0;
+	color:#a1887f;
 }
 footer .input-field input[type=text]{
-	color:#1565C0;
-	border-bottom:1px solid #1565C0;
+	color:#a1887f;
+	border-bottom:1px solid #a1887f;
 }
 footer .input-field input[type=text]:focus{
 	color:white;
