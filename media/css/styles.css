@@ -119,6 +119,7 @@ a:hover{
 	right:-350px;
 	top:70px;
 	transition:.2s;
+	max-width:300px;
 }
 .shrink ~ #contenupanier{
 	top:40px;
@@ -152,10 +153,17 @@ footer{
 	position:fixed;
 	right:10px;
 	bottom:30px;
+	transform:rotate(270deg);
 	transition:.2s;
 }
 #totop.bot{
 	bottom:50px;
+}
+
+#logo{
+	letter-spacing:1px;
+	padding-left:10px;
+	padding-right:10px;
 }
 
 
@@ -270,6 +278,16 @@ footer{
 	padding-bottom:5px;
 	padding-right:15px;
 	padding-left:15px;
+}
+.flex{
+	display:flex;
+}
+.product_panier_detail{
+	margin-right:70px;
+}
+.product_panier_prix{
+	right: 20px;
+    position: absolute;
 }
 .filler{
 	position:relative;
